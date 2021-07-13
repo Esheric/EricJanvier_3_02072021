@@ -9,10 +9,10 @@
     .container1{
         background-image: url(/sass/images/restaurants/luxe.jpg);
         .container1__title{
-            text-shadow: 3px 3px lighten($color: $color-quatenary, $amount: 5%);
+            text-shadow: 2px 2px lighten($color: $color-quatenary, $amount: 5%);
         }
         .container1__p1{
-            text-shadow: 3px 3px lighten($color: $color-quatenary, $amount: 5%);
+            text-shadow: 1px 1px lighten($color: $color-quatenary, $amount: 5%);
         }
     }
     .container2__title{

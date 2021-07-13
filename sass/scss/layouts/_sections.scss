@@ -1,0 +1,14 @@
+.cardcommun{
+    width: 95%;
+    height: 14rem;
+    border: 1px solide $color-quatenary;
+    border-radius: 1rem;
+    background-color: lighten($color: $color-quatenary, $amount: 5%);
+    .back-image img{
+        height: 8rem;
+        width: 100%;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        object-fit: cover;
+    }
+}

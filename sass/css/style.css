@@ -55,10 +55,10 @@
     background-image: url(/sass/images/restaurants/luxe.jpg);
   }
   .container1 .container1__title {
-    text-shadow: 3px 3px #f7f7f7;
+    text-shadow: 2px 2px #f7f7f7;
   }
   .container1 .container1__p1 {
-    text-shadow: 3px 3px #f7f7f7;
+    text-shadow: 1px 1px #f7f7f7;
   }
 
   .container2__title {
@@ -76,6 +76,18 @@
     width: 20rem;
   }
 }
+h1, img {
+  font-family: shrikhand;
+}
+
+* {
+  font-family: roboto, sans-serif;
+}
+
+.main-header__p input, .btn__p2, .btn__menu-commun1 {
+  font-weight: bolder;
+}
+
 .main-header {
   display: flex;
   flex-direction: column;
@@ -170,6 +182,21 @@
 
 .btn-bulle-commun1 {
   color: white;
+}
+
+.cardcommun {
+  width: 95%;
+  height: 14rem;
+  border: 1px solide #eaeaea;
+  border-radius: 1rem;
+  background-color: #f7f7f7;
+}
+.cardcommun .back-image img {
+  height: 8rem;
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
