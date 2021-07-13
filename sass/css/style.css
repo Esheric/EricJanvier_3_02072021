@@ -1,0 +1,175 @@
+.btn-colorer, .btn__p2 {
+  padding-right: 16px;
+  padding-left: 16px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 22px;
+}
+
+.container2__menu-commun1 {
+  border: 1px solid #eaeaea;
+  border-radius: 23px;
+  padding-bottom: 20px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 22px;
+}
+
+.btn-bulle-commun1 {
+  border: 1px solid #9356DC;
+  width: 30px;
+  height: 25px;
+  border-radius: 20px;
+  position: relative;
+  right: 30px;
+  top: 28px;
+  font-size: 16px;
+  background-color: #9356DC;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 5px;
+}
+
+.header-container, .main-header form, .main-header__image {
+  width: 100%;
+  height: 4rem;
+}
+
+.container, .container2, .container1 {
+  width: 100%;
+  height: 25rem;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-header__image {
+    background-image: linear-gradient(to right, #9356DC, #FF79DA, #99E2D0);
+    height: 8rem;
+  }
+  .main-header__image img {
+    width: 30rem;
+  }
+
+  .container1 {
+    background-image: url(/sass/images/restaurants/luxe.jpg);
+  }
+  .container1 .container1__title {
+    text-shadow: 3px 3px #f7f7f7;
+  }
+  .container1 .container1__p1 {
+    text-shadow: 3px 3px #f7f7f7;
+  }
+
+  .container2__title {
+    text-align: start;
+  }
+
+  .divcontainer2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .container2__menu-commun1 {
+    font-size: 20px;
+    width: 20rem;
+  }
+}
+.main-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-header form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+}
+
+.main-header__p input {
+  background-color: #eaeaea;
+  border-style: none;
+  padding-left: 15px;
+  height: 3rem;
+  width: 11rem;
+  font-size: 20px;
+}
+
+.main-header__p input:focus {
+  outline: none;
+  border: 1px dashed #FF79DA;
+  border-right-color: #9356DC;
+  border-left-color: #FF79DA;
+  border-bottom-color: #9356DC;
+  border-radius: 25px;
+}
+
+.container1 {
+  background-color: #f4f4f4;
+  margin-top: -40px;
+}
+
+.container1__title {
+  font-size: 30px;
+  padding-top: 3rem;
+}
+
+.container1__p1 {
+  font-size: 25px;
+}
+
+.container1__p2 {
+  font-size: 20px;
+  margin-top: 5rem;
+}
+
+.btn-colorer, .btn__p2 {
+  text-decoration: none;
+  color: white;
+  border: 1px solid #9356DC;
+  border-left-color: #FF79DA;
+  border-top-color: #FF79DA;
+  border-radius: 50px;
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
+}
+
+.container2 .container2__title {
+  font-size: 30px;
+  padding-right: 26rem;
+}
+
+.container2__menu-commun1 {
+  background-color: #f2f2f2;
+  padding-left: 1rem;
+}
+.container2__menu-commun1:hover {
+  cursor: pointer;
+  background-color: #e4d5f6;
+}
+.container2__menu-commun1 .btn__menu-commun1 {
+  text-decoration: none;
+  color: black;
+}
+
+.container2__menu-commun1 i {
+  position: relative;
+  right: 10px;
+  color: #848484;
+}
+.container2__menu-commun1 i:hover {
+  color: #9356DC;
+}
+
+.btn-bulle-commun1 {
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

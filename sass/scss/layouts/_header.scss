@@ -1,0 +1,37 @@
+.main-header{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-header__image{
+        @extend .header-container;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.main-header form{
+        @extend .header-container;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-quatenary;
+}
+
+.main-header__p input{
+        background-color: $color-quatenary;
+        border-style: none;
+        padding-left: 15px;
+        height: 3rem;
+        width: 11rem;
+        font-size: 20px;
+}
+
+.main-header__p input:focus{
+        outline: none;
+        border: 1px dashed $color-secondary;
+        border-right-color: $color-primary;
+        border-left-color: $color-secondary;
+        border-bottom-color: $color-primary;
+        border-radius: 25px;
+}

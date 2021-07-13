@@ -1,0 +1,35 @@
+.container1{
+    @extend .container;
+    background-color: lighten($color: $color-quatenary, $amount: 4%);
+    margin-top: -40px;
+}
+
+.container1__title{
+    font-size: 30px;
+    padding-top: 3rem;
+}
+
+.container1__p1{
+    font-size: 25px;
+}
+
+.btn__p2{
+    @extend .btn-colorer;
+}
+
+.container1__p2{
+    font-size: 20px;
+    margin-top: 5rem;
+}
+
+.btn-colorer{
+    @extend %btn-primary;
+    text-decoration: none;
+    color: white;
+    border: 1px solid $color-primary;
+    border-left-color: $color-secondary;
+    border-top-color: $color-secondary;
+    border-radius: 50px;
+    background-image: linear-gradient(to top, $color-primary, $color-secondary);   
+}
+

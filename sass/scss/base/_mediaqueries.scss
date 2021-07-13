@@ -1,0 +1,33 @@
+@media #{$medium-up} {
+    .main-header__image{
+        background-image: linear-gradient(to right, $color-primary, $color-secondary, $color-tertiary);
+        height: 8rem;
+        img{
+            width: 30rem;
+        }
+    }
+    .container1{
+        background-image: url(/sass/images/restaurants/luxe.jpg);
+        .container1__title{
+            text-shadow: 3px 3px lighten($color: $color-quatenary, $amount: 5%);
+        }
+        .container1__p1{
+            text-shadow: 3px 3px lighten($color: $color-quatenary, $amount: 5%);
+        }
+    }
+    .container2__title{
+        text-align: start;
+    }
+
+    .divcontainer2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .container2__menu-commun1{
+        font-size: 20px;
+        width: 20rem;
+    }
+ 
+}

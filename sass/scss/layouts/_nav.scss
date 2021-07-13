@@ -1,0 +1,35 @@
+.container2{
+    @extend .container;
+    .container2__title{
+        font-size: 30px;
+        padding-right: 26rem;
+    }
+}
+
+.container2__menu-commun1{
+    @extend %btn-secondary;
+    background-color: lighten($color: $color-quatenary, $amount: 3%);
+    padding-left: 1rem;
+    &:hover{
+        cursor: pointer;
+        background-color: lighten($color: $color-primary, $amount: 30%);
+    }
+    .btn__menu-commun1{
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.container2__menu-commun1 i{
+    position: relative;
+    right: 10px;
+    color: darken($color: $color-quatenary, $amount: 40%);
+    &:hover{
+        color: $color-primary;
+    }
+}
+
+.btn-bulle-commun1{
+    @extend %btn-bulle;
+    color: white;
+}
