@@ -15,6 +15,11 @@
             text-shadow: 1px 1px lighten($color: $color-quatenary, $amount: 5%);
         }
     }
+
+    .container2{
+        height: 15rem;
+    }
+
     .container2__title{
         text-align: start;
     }
@@ -29,5 +34,23 @@
         font-size: 20px;
         width: 20rem;
     }
- 
+
+    .container-articles{
+        height: 55rem;
+    }
+
+    .divcontainer-articles{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+          .cardcommun{
+             width: 40%;
+        }
+    }
+
+    .footer-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
 }

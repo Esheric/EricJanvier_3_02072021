@@ -2,7 +2,7 @@
     @extend .container;
     .container2__title{
         font-size: 30px;
-        padding-right: 26rem;
+        padding-right: 22rem;
     }
 }
 
@@ -24,9 +24,13 @@
     position: relative;
     right: 10px;
     color: darken($color: $color-quatenary, $amount: 40%);
-    &:hover{
+    /*&:hover{
         color: $color-primary;
-    }
+    }*/
+}
+
+.container2__menu-commun1:hover i{
+    color: $color-primary;
 }
 
 .btn-bulle-commun1{

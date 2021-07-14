@@ -1,0 +1,23 @@
+.footer{
+    background-color: darken($color: $color-quatenary, $amount: 75%);
+    .footer-title{
+        color: lighten($color: $color-primary, $amount: 70%);
+        padding-left: 2rem;
+        padding-top: 1rem;
+        font-size: 25px;
+    }
+}
+
+.footer-list{
+    list-style-type: none;
+    font-size: 20px;
+    a {
+        text-decoration: none;
+        color: lighten($color: $color-primary, $amount: 70%);
+    }
+    i{
+        color: lighten($color: $color-primary, $amount: 70%);
+        margin-right: 1rem;
+    }
+}
+

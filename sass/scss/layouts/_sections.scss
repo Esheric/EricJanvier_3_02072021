@@ -1,14 +1,61 @@
-.cardcommun{
-    width: 95%;
-    height: 14rem;
-    border: 1px solide $color-quatenary;
-    border-radius: 1rem;
+.container-articles{
+    @extend .container-articles;
     background-color: lighten($color: $color-quatenary, $amount: 5%);
+    padding-left: 2rem;
+    .container-articles__title{
+        padding-top: 3rem;
+    }
+}
+
+.cardcommun{
+    width: 90%;
+    height: 21rem;
+    border: 1px solid $color-quatenary;
+    border-radius: 1rem;
+    background-color: lighten($color: $color-quatenary, $amount: 90%);
+    margin-top: 2rem;
+    &:hover{
+        box-shadow: 1px 1px darken($color: $color-primary, $amount: 80%);
+    }
+    a{
+        text-decoration-line: none;
+        color: black;
+    }
+    .back-image{
+        margin: 0;
+    }
     .back-image img{
-        height: 8rem;
+        height: 13rem;
         width: 100%;
         border-top-left-radius: 1rem;
         border-top-right-radius: 1rem;
         object-fit: cover;
+    }
+
+    .cardcommun__title{
+        padding-left: 1rem;
+        font-size: 20px;
+    }
+
+    .cardcommun__p{
+        padding-left: 1rem;
+        font-size: 20px;
+    }
+
+    .cardcommun__new1{
+        @extend .btn-new;
+        float: right;
+        position: relative;
+        bottom: 18rem;
+        right: 1rem;
+        font-weight: bolder;
+    }
+
+    .far{
+        float: right;
+        font-size: 30px;
+        position: relative;
+        bottom: 70px;
+        right: 30px;      
     }
 }

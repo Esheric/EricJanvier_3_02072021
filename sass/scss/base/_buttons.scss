@@ -32,3 +32,12 @@
     padding-top: 5px;
 }
 
+.btn-new{
+    border: 1px solid lighten($color: $color-quinquenary, $amount: 40%);
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    background-color: lighten($color: $color-quinquenary, $amount: 40%);
+    color: $color-quinquenary;
+}
