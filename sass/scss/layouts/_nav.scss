@@ -35,5 +35,10 @@
 
 .btn-bulle-commun1{
     @extend %btn-bulle;
+    position: relative;
+    right: 30px;
+    top: 28px;
+    font-size: 16px;
+    background-color: $color-primary;
     color: white;
 }

@@ -17,22 +17,11 @@
     }
 
     .container2{
-        height: 15rem;
+        height: 25rem;
     }
 
     .container2__title{
         text-align: start;
-    }
-
-    .divcontainer2{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-
-    .container2__menu-commun1{
-        font-size: 20px;
-        width: 20rem;
     }
 
     .container-articles{
@@ -47,10 +36,80 @@
              width: 40%;
         }
     }
+    .page-arrow-image{
+        margin-top: -2rem;
+    }
+
+    .page-header__background-image img{
+        filter: grayscale(1);
+        -webkit-filter: grayscale(1);
+        &:hover {
+        filter: grayscale(0);
+        -webkit-filter: grayscale(0);
+        }
+    }
+
+    .page-container{
+        height: 160rem;
+    }
+
+    article.page-card{ 
+        height: 151px;
+        margin-bottom: 4rem;
+        .page-card__image{
+            margin: 0;
+        }
+        .page-card__image img{
+            display: initial;
+            height: 150px;
+            width: 15rem;
+            border-top-left-radius: 1rem;
+            border-bottom-left-radius: 1rem;
+            object-fit: cover;
+        }
+        .page-carte__title{
+            margin-left: 175px;
+            position: relative;
+            bottom: 140px;
+            left: 75px;
+        }
+    
+        .page-carte__p{
+            margin-left: 175px;
+            bottom: 125px;
+            left: 75px;
+        }
+    
+        .page-price{
+            right: 10px;
+            bottom: 170px;
+        }
+    }
+        main.page__container2{
+            height: 175rem;
+    }
 
     .footer-list{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+    }   
+
+}
+
+@media #{$large} {
+    .container2{
+        height: 15rem;
+    }
+
+    .divcontainer2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .container2__menu-commun1{
+        font-size: 20px;
+        width: 20rem;
     }
 }

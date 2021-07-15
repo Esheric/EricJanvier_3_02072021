@@ -10,11 +10,19 @@
 }
 
 .container-articles{
-    height: 100rem;
+    height: 102rem;
     width: 100%;
 }
 
-.footer{
+.page-container{
+    background-color: $color-quatenary;
     width: 100%;
-    height: 18rem;
+    height: 130rem;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
+.footer-main{
+    width: 100%;
+    height: 20rem;
 }

@@ -1,10 +1,11 @@
-.footer{
+.footer-main{
     background-color: darken($color: $color-quatenary, $amount: 75%);
     .footer-title{
         color: lighten($color: $color-primary, $amount: 70%);
         padding-left: 2rem;
         padding-top: 1rem;
         font-size: 25px;
+        margin-top: 0;
     }
 }
 

@@ -1,4 +1,4 @@
-.btn-colorer, .btn__p2 {
+.btn-colorer, .page-btn .page-btn__a, .btn__p2 {
   padding-right: 16px;
   padding-left: 16px;
   padding-top: 20px;
@@ -15,16 +15,11 @@
   font-size: 22px;
 }
 
-.btn-bulle-commun1 {
+.page-header a, .btn-bulle-commun1 {
   border: 1px solid #9356DC;
   width: 30px;
   height: 25px;
   border-radius: 20px;
-  position: relative;
-  right: 30px;
-  top: 28px;
-  font-size: 16px;
-  background-color: #9356DC;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -41,7 +36,7 @@
   color: #2c836e;
 }
 
-.header-container, .main-header form, .main-header__image {
+.header-container, .main-header form, .main-header__image, .page-arrow-image {
   width: 100%;
   height: 4rem;
 }
@@ -53,21 +48,29 @@
 }
 
 .container-articles {
-  height: 100rem;
+  height: 102rem;
   width: 100%;
 }
 
-.footer {
+.page-container, .page__container, .page__container2 {
+  background-color: #eaeaea;
   width: 100%;
-  height: 18rem;
+  height: 130rem;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+}
+
+.footer-main, .footer-page, .footer-page2 {
+  width: 100%;
+  height: 20rem;
 }
 
 @media only screen and (min-width: 768px) {
-  .main-header__image {
+  .main-header__image, .page-arrow-image {
     background-image: linear-gradient(to right, #9356DC, #FF79DA, #99E2D0);
     height: 8rem;
   }
-  .main-header__image img {
+  .main-header__image img, .page-arrow-image img {
     width: 30rem;
   }
 
@@ -82,22 +85,11 @@
   }
 
   .container2 {
-    height: 15rem;
+    height: 25rem;
   }
 
   .container2__title {
     text-align: start;
-  }
-
-  .divcontainer2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-
-  .container2__menu-commun1 {
-    font-size: 20px;
-    width: 20rem;
   }
 
   .container-articles {
@@ -113,10 +105,78 @@
     width: 40%;
   }
 
+  .page-arrow-image {
+    margin-top: -2rem;
+  }
+
+  .page-header__background-image img {
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+  }
+  .page-header__background-image img:hover {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+  }
+
+  .page-container, .page__container, .page__container2 {
+    height: 160rem;
+  }
+
+  article.page-card {
+    height: 151px;
+    margin-bottom: 4rem;
+  }
+  article.page-card .page-card__image {
+    margin: 0;
+  }
+  article.page-card .page-card__image img {
+    display: initial;
+    height: 150px;
+    width: 15rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    object-fit: cover;
+  }
+  article.page-card .page-carte__title {
+    margin-left: 175px;
+    position: relative;
+    bottom: 140px;
+    left: 75px;
+  }
+  article.page-card .page-carte__p {
+    margin-left: 175px;
+    bottom: 125px;
+    left: 75px;
+  }
+  article.page-card .page-price {
+    right: 10px;
+    bottom: 170px;
+  }
+
+  main.page__container2 {
+    height: 175rem;
+  }
+
   .footer-list {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+  }
+}
+@media only screen and (min-width: 980px) {
+  .container2 {
+    height: 15rem;
+  }
+
+  .divcontainer2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .container2__menu-commun1 {
+    font-size: 20px;
+    width: 20rem;
   }
 }
 h1, h3, img {
@@ -136,7 +196,7 @@ h1, h3, img {
   flex-direction: column;
 }
 
-.main-header__image {
+.main-header__image, .page-arrow-image {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -186,7 +246,7 @@ h1, h3, img {
   margin-top: 5rem;
 }
 
-.btn-colorer, .btn__p2 {
+.btn-colorer, .page-btn .page-btn__a, .btn__p2 {
   text-decoration: none;
   color: white;
   border: 1px solid #9356DC;
@@ -228,6 +288,11 @@ h1, h3, img {
 }
 
 .btn-bulle-commun1 {
+  position: relative;
+  right: 30px;
+  top: 28px;
+  font-size: 16px;
+  background-color: #9356DC;
   color: white;
 }
 
@@ -287,14 +352,15 @@ h1, h3, img {
   right: 30px;
 }
 
-.footer {
+.footer-main, .footer-page, .footer-page2 {
   background-color: #2b2b2b;
 }
-.footer .footer-title {
+.footer-main .footer-title, .footer-page .footer-title, .footer-page2 .footer-title {
   color: white;
   padding-left: 2rem;
   padding-top: 1rem;
   font-size: 25px;
+  margin-top: 0;
 }
 
 .footer-list {
@@ -308,6 +374,101 @@ h1, h3, img {
 .footer-list i {
   color: white;
   margin-right: 1rem;
+}
+
+.page-header a {
+  position: relative;
+  top: 3rem;
+  left: 1rem;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  border-color: white;
+  background-color: white;
+}
+
+.page-header__background-image {
+  width: 100%;
+  height: 25rem;
+  margin: 0;
+}
+.page-header__background-image img {
+  height: 25rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.page__container, .page__container2 {
+  position: relative;
+  bottom: 6rem;
+}
+.page__container .page__container__title, .page__container2 .page__container__title {
+  font-size: 45px;
+  position: relative;
+  top: 45px;
+  left: 15px;
+}
+.page__container .page-card__title, .page__container2 .page-card__title {
+  padding-top: 3rem;
+  padding-left: 1rem;
+}
+.page__container .far, .page__container2 .far {
+  float: right;
+  font-size: 40px;
+  position: relative;
+  bottom: 40px;
+  right: 50px;
+}
+
+.page-card {
+  border: 0.19rem white solid;
+  border-radius: 1.25rem;
+  background-color: white;
+  height: 100px;
+  width: 90%;
+  margin-bottom: 4rem;
+  margin-left: 1rem;
+  box-shadow: 0 0 1rem #0000002E;
+}
+.page-card a {
+  text-decoration: none;
+  color: black;
+}
+.page-card img {
+  display: none;
+}
+.page-card .page-carte__title {
+  margin-left: 16px;
+}
+.page-card .page-carte__p {
+  font-size: 20px;
+  margin-left: 16px;
+  position: relative;
+  bottom: 10px;
+}
+.page-card .page-price {
+  font-size: 20px;
+  float: right;
+  position: relative;
+  right: 30px;
+  bottom: 55px;
+}
+
+.page-btn {
+  text-align: center;
+}
+.page-btn .page-btn__a {
+  font-weight: bolder;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.footer-page, .footer-page2 {
+  margin-top: -6rem;
+}
+
+.page__container2 {
+  height: 140rem;
 }
 
 /*# sourceMappingURL=style.css.map */

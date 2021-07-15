@@ -1,0 +1,101 @@
+.page-header a{  
+    @extend %btn-bulle;
+    position: relative;
+    top: 3rem;
+    left: 1rem;
+    font-size: 20px;
+    color: black; 
+    text-decoration: none; 
+    border-color: white;
+    background-color: white; 
+}
+
+.page-arrow-image{
+    @extend .main-header__image;
+}
+
+.page-header__background-image{
+    width: 100%;
+    height: 25rem;
+    margin: 0;
+    img{
+        height: 25rem;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.page__container{
+    @extend .page-container;
+    position: relative;
+    bottom: 6rem;
+    .page__container__title{
+        font-size: 45px;
+        position: relative;
+        top: 45px;
+        left: 15px;
+    }
+    .page-card__title{
+        padding-top: 3rem;
+        padding-left: 1rem;
+    }
+    .far{
+        float: right;
+        font-size: 40px;
+        position: relative;
+        bottom: 40px;
+        right: 50px;  
+    }
+}
+
+.page-card{
+    border: 0.19rem white solid;
+    border-radius: 1.25rem;
+    background-color: white;
+    height: 100px;
+    width: 90%;
+    margin-bottom: 4rem;
+    margin-left: 1rem;
+    box-shadow: 0 0 1rem #0000002E; 
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    img{
+        display: none;
+    }
+    
+    .page-carte__title{
+        margin-left: 16px;
+    }
+
+    .page-carte__p{
+        font-size: 20px;
+        margin-left: 16px;
+        position: relative;
+        bottom: 10px;
+    }
+
+    .page-price{
+        font-size: 20px;
+        float: right;
+        position: relative;
+        right: 30px;
+        bottom: 55px;
+    }
+}
+
+.page-btn{
+    text-align: center;
+    .page-btn__a{
+        @extend .btn-colorer;
+        font-weight: bolder;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
+.footer-page{
+    @extend.footer-main;
+    margin-top: -6rem;
+}

@@ -1,0 +1,9 @@
+.page__container2{
+    @extend .page__container;
+    height: 140rem;
+
+}
+
+.footer-page2{
+    @extend.footer-page;
+}
