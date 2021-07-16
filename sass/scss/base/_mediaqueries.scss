@@ -1,4 +1,4 @@
-@media #{$medium-up} {
+@media #{$tablet} {
     .main-header__image{
         background-image: linear-gradient(to right, $color-primary, $color-secondary, $color-tertiary);
         height: 8rem;
@@ -97,7 +97,7 @@
 
 }
 
-@media #{$large} {
+@media #{$tablet-up} {
     .container2{
         height: 15rem;
     }
@@ -112,4 +112,47 @@
         font-size: 20px;
         width: 20rem;
     }
+
+    main.page__container2{
+            height: 130rem;
+        }
+}
+
+@media #{$tablet-up}{
+    .page__container{
+        height: 110rem;
+    }
+    .page-container-articles{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around; 
+        .page-card{
+            height: 18rem;
+            width: 30%;
+        }
+        .page-card a .page-card__image img{
+            width: 100%;
+            height: 170px;
+            border-top-right-radius: 1rem;
+            border-bottom-left-radius: initial;
+        }
+        .page-card .page-carte__title{
+            margin-left: -75px;
+            font-size: 19px;
+            bottom: 0px;
+        }
+
+        .page-card .page-carte__p{
+            margin-left: -75px;
+            font-size: 15px;
+            bottom: 10px;
+        }
+
+        .page-card .page-price{
+            float: left;
+            font-size: 18px;
+            bottom: 0px;
+            left: 15px;
+        }
+    }   
 }
