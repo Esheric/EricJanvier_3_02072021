@@ -4,6 +4,7 @@
     padding-left: 2rem;
     .container-articles__title{
         padding-top: 3rem;
+        font-size: 30px;
     }
 }
 
@@ -15,7 +16,8 @@
     background-color: lighten($color: $color-quatenary, $amount: 90%);
     margin-top: 2rem;
     &:hover{
-        box-shadow: 1px 1px darken($color: $color-primary, $amount: 80%);
+        background-color: lighten($color: $color-tertiary, $amount: 24%);
+        box-shadow: 2px 3px 10px darken($color: $color-quatenary, $amount: 50%);
     }
     a{
         text-decoration-line: none;
@@ -58,4 +60,13 @@
         bottom: 70px;
         right: 30px;      
     }
+
+    /*.fas{
+        float: right;
+        font-size: 30px;
+        position: relative;
+        bottom: 70px;
+        right: 30px;  
+        background-color: ;
+    }*/
 }

@@ -34,6 +34,7 @@
         position: relative;
         top: 45px;
         left: 15px;
+        text-align: center;
     }
     .page-card__title{
         padding-top: 3rem;
@@ -56,7 +57,11 @@
     width: 90%;
     margin-bottom: 4rem;
     margin-left: 1rem;
-    box-shadow: 0 0 1rem #0000002E; 
+    box-shadow: 0 0 1rem #0000002E;
+    &:hover{
+        background-color: lighten($color: $color-tertiary, $amount: 24%);
+        box-shadow: 2px 3px 10px darken($color: $color-quatenary, $amount: 50%);
+    }
     a{
         text-decoration: none;
         color: black;
@@ -87,6 +92,8 @@
 
 .page-btn{
     text-align: center;
+    position: relative;
+    top: 45px;
     .page-btn__a{
         @extend .btn-colorer;
         font-weight: bolder;
@@ -98,4 +105,14 @@
 .footer-page{
     @extend.footer-main;
     margin-top: -6rem;
+}
+
+.page__container2{
+    @extend .page__container;
+    height: 140rem;
+
+}
+
+.footer-page2{
+    @extend.footer-page;
 }

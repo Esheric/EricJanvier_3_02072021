@@ -12,7 +12,7 @@
   padding-bottom: 20px;
   margin-left: 1rem;
   margin-right: 1rem;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .page-header a, .btn-bulle-commun1 {
@@ -48,7 +48,7 @@
 }
 
 .container-articles {
-  height: 102rem;
+  height: 110rem;
   width: 100%;
 }
 
@@ -62,7 +62,7 @@
 
 .footer-main, .footer-page, .footer-page2 {
   width: 100%;
-  height: 20rem;
+  height: 16rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -81,28 +81,30 @@
     text-shadow: 2px 2px #f7f7f7;
   }
   .container1 .container1__p1 {
-    text-shadow: 1px 1px #f7f7f7;
+    color: #FF79DA;
+    text-shadow: 1px 1px #c6008f;
   }
 
   .container2 {
     height: 25rem;
   }
-
-  .container2__title {
+  .container2 .container2__title {
     text-align: start;
   }
 
   .container-articles {
-    height: 55rem;
+    height: 60rem;
   }
 
   .divcontainer-articles {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-right: 9rem;
+    margin-left: 3rem;
   }
   .divcontainer-articles .cardcommun {
-    width: 40%;
+    width: 45%;
   }
 
   .page-arrow-image {
@@ -120,6 +122,14 @@
 
   .page-container, .page__container, .page__container2 {
     height: 160rem;
+  }
+  .page-container .page-btn, .page__container .page-btn, .page__container2 .page-btn {
+    top: 65px;
+  }
+
+  .footer-title {
+    padding-left: 0rem;
+    padding-right: 5rem;
   }
 
   article.page-card {
@@ -157,6 +167,11 @@
     height: 175rem;
   }
 
+  .footer-main, .footer-page, .footer-page2 {
+    height: 8rem;
+    text-align: center;
+  }
+
   .footer-list {
     display: flex;
     flex-direction: row;
@@ -167,25 +182,39 @@
   .container2 {
     height: 15rem;
   }
+  .container2 h1.container2__title {
+    padding-right: 0rem;
+    padding-left: 2rem;
+    text-align: center;
+  }
 
   .divcontainer2 {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
   }
 
   .container2__menu-commun1 {
-    font-size: 20px;
+    font-size: 16px;
     width: 20rem;
+  }
+
+  .container-articles__title {
+    text-align: center;
+    padding-right: 5rem;
   }
 
   main.page__container2 {
     height: 130rem;
   }
+
+  .page__container .page-btn, .page__container2 .page-btn {
+    top: 60px;
+  }
 }
-@media only screen and (min-width: 980px) {
+@media only screen and (min-width: 1100px) {
   .page__container, .page__container2 {
-    height: 110rem;
+    height: 105rem;
   }
 
   .page-container-articles {
@@ -347,6 +376,7 @@ body {
 }
 .container-articles .container-articles__title {
   padding-top: 3rem;
+  font-size: 30px;
 }
 
 .cardcommun {
@@ -356,9 +386,18 @@ body {
   border-radius: 1rem;
   background-color: white;
   margin-top: 2rem;
+  /*.fas{
+      float: right;
+      font-size: 30px;
+      position: relative;
+      bottom: 70px;
+      right: 30px;  
+      background-color: ;
+  }*/
 }
 .cardcommun:hover {
-  box-shadow: 1px 1px black;
+  background-color: #f8fdfc;
+  box-shadow: 2px 3px 10px #6b6b6b;
 }
 .cardcommun a {
   text-decoration-line: none;
@@ -410,7 +449,7 @@ body {
 
 .footer-list {
   list-style-type: none;
-  font-size: 20px;
+  font-size: 16px;
 }
 .footer-list a {
   text-decoration: none;
@@ -452,6 +491,7 @@ body {
   position: relative;
   top: 45px;
   left: 15px;
+  text-align: center;
 }
 .page__container .page-card__title, .page__container2 .page-card__title {
   padding-top: 3rem;
@@ -474,6 +514,10 @@ body {
   margin-bottom: 4rem;
   margin-left: 1rem;
   box-shadow: 0 0 1rem #0000002E;
+}
+.page-card:hover {
+  background-color: #f8fdfc;
+  box-shadow: 2px 3px 10px #6b6b6b;
 }
 .page-card a {
   text-decoration: none;
@@ -501,6 +545,8 @@ body {
 
 .page-btn {
   text-align: center;
+  position: relative;
+  top: 45px;
 }
 .page-btn .page-btn__a {
   font-weight: bolder;

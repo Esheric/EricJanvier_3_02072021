@@ -12,28 +12,29 @@
             text-shadow: 2px 2px lighten($color: $color-quatenary, $amount: 5%);
         }
         .container1__p1{
-            text-shadow: 1px 1px lighten($color: $color-quatenary, $amount: 5%);
+            color: $color-secondary;
+            text-shadow: 1px 1px darken($color: $color-secondary, $amount: 35%);
         }
     }
 
     .container2{
         height: 25rem;
-    }
-
-    .container2__title{
+        .container2__title{
         text-align: start;
+        }
     }
 
     .container-articles{
-        height: 55rem;
-    }
-
-    .divcontainer-articles{
+        height: 60rem;
+        }
+        .divcontainer-articles{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+        margin-right: 9rem;
+        margin-left: 3rem;
           .cardcommun{
-             width: 40%;
+             width: 45%;
         }
     }
     .page-arrow-image{
@@ -51,6 +52,14 @@
 
     .page-container{
         height: 160rem;
+        .page-btn{
+            top: 65px;
+        }
+    }
+
+    .footer-title{
+        padding-left: 0rem;
+        padding-right: 5rem;
     }
 
     article.page-card{ 
@@ -89,6 +98,11 @@
             height: 175rem;
     }
 
+    .footer-main{
+            height: 8rem;
+            text-align: center;
+    }
+
     .footer-list{
         display: flex;
         flex-direction: row;
@@ -100,27 +114,44 @@
 @media #{$tablet-up} {
     .container2{
         height: 15rem;
+        h1.container2__title{
+            padding-right: 0rem;
+            padding-left: 2rem;
+            text-align: center;
+        }
     }
 
     .divcontainer2{
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
     }
 
     .container2__menu-commun1{
-        font-size: 20px;
+        font-size: 16px;
         width: 20rem;
+    }
+
+    .container-articles__title{
+        text-align: center;
+        padding-right: 5rem;
     }
 
     main.page__container2{
             height: 130rem;
+
         }
+    
+    .page__container{  
+        .page-btn{
+            top: 60px;
+        } 
+    }  
 }
 
-@media #{$tablet-up}{
+@media #{$laptop}{
     .page__container{
-        height: 110rem;
+        height: 105rem;
     }
     .page-container-articles{
         display: flex;
@@ -154,5 +185,5 @@
             bottom: 0px;
             left: 15px;
         }
-    }   
+    } 
 }
