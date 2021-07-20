@@ -7,6 +7,10 @@ body{
     flex-direction: column;
 }
 
+.main-header__writting{
+        display: none;
+}
+
 .main-header__image{
         @extend .header-container;
         display: flex;

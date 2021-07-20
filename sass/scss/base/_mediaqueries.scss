@@ -1,19 +1,33 @@
 @media #{$tablet} {
-    .main-header__image{
-        background-image: linear-gradient(to right, $color-primary, $color-secondary, $color-tertiary);
-        height: 8rem;
-        img{
-            width: 30rem;
-        }
+    .main-header__image img{
+            display: none;
     }
+
+    .main-header .main-header__writting{
+        display: initial;
+        display: flex;
+        justify-content: center;
+        font-size: 7rem;
+        background-color: darken($color: $color-quatenary, $amount: 75%);
+        text-align: center;
+        margin-top: -71px;
+        margin-bottom: 0;
+    }
+
+    .oh{
+        color: $color-primary;        
+    }
+    .my{
+        color: $color-secondary;
+    }
+    .food{
+        color: $color-tertiary;
+    }
+    
     .container1{
         background-image: url(/sass/images/restaurants/luxe.jpg);
-        .container1__title{
-            text-shadow: 2px 2px lighten($color: $color-quatenary, $amount: 5%);
-        }
-        .container1__p1{
-            color: $color-secondary;
-            text-shadow: 1px 1px darken($color: $color-secondary, $amount: 35%);
+        .container1__title, .container1__p1 {
+            text-shadow: 2px 2px lighten($color: $color-quatenary, $amount: 90%);
         }
     }
 
@@ -30,15 +44,29 @@
         .divcontainer-articles{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
         margin-right: 9rem;
         margin-left: 3rem;
           .cardcommun{
              width: 45%;
         }
     }
-    .page-arrow-image{
-        margin-top: -2rem;
+
+    .page-header{
+        display: flex;
+        flex-direction: column;
+        .page-arrow-image{
+            margin-top: -102px;
+        } 
+        .page-header__writting{
+            display: initial;
+            font-size: 7rem;
+            color: white;
+            background-color: darken($color: $color-quatenary, $amount: 75%);
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
     }
 
     .page-header__background-image img{
@@ -60,6 +88,10 @@
     .footer-title{
         padding-left: 0rem;
         padding-right: 5rem;
+    }
+
+    .footer-list li .far{
+        display: initial;
     }
 
     article.page-card{ 
@@ -137,6 +169,13 @@
         padding-right: 5rem;
     }
 
+    .divcontainer-articles{
+        justify-content: space-around;
+        .cardcommun{
+             width: 34%;
+        }
+    }
+
     main.page__container2{
             height: 130rem;
 
@@ -168,13 +207,13 @@
             border-bottom-left-radius: initial;
         }
         .page-card .page-carte__title{
-            margin-left: -75px;
+            margin-left: -60px;
             font-size: 19px;
             bottom: 0px;
         }
 
         .page-card .page-carte__p{
-            margin-left: -75px;
+            margin-left: -60px;
             font-size: 15px;
             bottom: 10px;
         }
@@ -183,7 +222,7 @@
             float: left;
             font-size: 18px;
             bottom: 0px;
-            left: 15px;
+            left: 17px;
         }
     } 
 }
