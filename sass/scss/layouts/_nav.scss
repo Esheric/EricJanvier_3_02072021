@@ -24,14 +24,11 @@
     position: relative;
     right: 10px;
     color: darken($color: $color-quatenary, $amount: 40%);
-    /*&:hover{
-        color: $color-primary;
-    }*/
 }
 
 .container2__menu-commun1:hover i{
     color: $color-primary;
-}
+}/*animation du nav*/
 
 .btn-bulle-commun1{
     @extend %btn-bulle;

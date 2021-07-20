@@ -90,6 +90,10 @@
         padding-right: 5rem;
     }
 
+    ul.footer-list li{
+        margin-top: 0rem;
+    }
+
     .footer-list li .far{
         display: initial;
     }
@@ -140,13 +144,12 @@
         flex-direction: row;
         justify-content: space-evenly;
     }   
-
 }
 
 @media #{$tablet-up} {
     .container2{
         height: 15rem;
-        h1.container2__title{
+        h2.container2__title{
             padding-right: 0rem;
             padding-left: 2rem;
             text-align: center;
@@ -175,20 +178,14 @@
              width: 34%;
         }
     }
-
-    main.page__container2{
-            height: 130rem;
-
-        }
-    
-    .page__container{  
-        .page-btn{
-            top: 60px;
-        } 
-    }  
 }
 
 @media #{$laptop}{
+    main.page__container2{
+        height: 130rem;
+
+    }
+
     .page__container{
         height: 105rem;
     }
@@ -214,7 +211,7 @@
 
         .page-card .page-carte__p{
             margin-left: -60px;
-            font-size: 15px;
+            font-size: 16px;
             bottom: 10px;
         }
 
@@ -225,4 +222,5 @@
             left: 17px;
         }
     } 
+
 }

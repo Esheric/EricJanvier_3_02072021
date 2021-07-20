@@ -62,7 +62,7 @@
 
 .footer-main, .footer-page, .footer-page2 {
   width: 100%;
-  height: 16rem;
+  height: 14rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -160,6 +160,10 @@
     padding-right: 5rem;
   }
 
+  ul.footer-list li {
+    margin-top: 0rem;
+  }
+
   .footer-list li .far {
     display: initial;
   }
@@ -214,7 +218,7 @@
   .container2 {
     height: 15rem;
   }
-  .container2 h1.container2__title {
+  .container2 h2.container2__title {
     padding-right: 0rem;
     padding-left: 2rem;
     text-align: center;
@@ -242,16 +246,12 @@
   .divcontainer-articles .cardcommun {
     width: 34%;
   }
-
+}
+@media only screen and (min-width: 1100px) {
   main.page__container2 {
     height: 130rem;
   }
 
-  .page__container .page-btn, .page__container2 .page-btn {
-    top: 60px;
-  }
-}
-@media only screen and (min-width: 1100px) {
   .page__container, .page__container2 {
     height: 105rem;
   }
@@ -278,7 +278,7 @@
   }
   .page-container-articles .page-card .page-carte__p {
     margin-left: -60px;
-    font-size: 15px;
+    font-size: 16px;
     bottom: 10px;
   }
   .page-container-articles .page-card .page-price {
@@ -288,7 +288,7 @@
     left: 17px;
   }
 }
-h1, h3, img, .oh, .my, .food {
+h1, h3, img, .oh, .my, .food, .container1__title, .container2__title, .container-articles__title {
   font-family: shrikhand;
 }
 
@@ -395,15 +395,13 @@ body {
   position: relative;
   right: 10px;
   color: #848484;
-  /*&:hover{
-      color: $color-primary;
-  }*/
 }
 
 .container2__menu-commun1:hover i {
   color: #9356DC;
 }
 
+/*animation du nav*/
 .btn-bulle-commun1 {
   position: relative;
   right: 30px;
@@ -486,13 +484,16 @@ body {
   list-style-type: none;
   font-size: 16px;
 }
-.footer-list a {
-  text-decoration: none;
-  color: white;
+.footer-list li {
+  margin-top: 1rem;
 }
 .footer-list i {
   color: white;
   margin-right: 1rem;
+}
+.footer-list a {
+  text-decoration: none;
+  color: white;
 }
 .footer-list .far {
   display: none;
@@ -572,7 +573,7 @@ body {
   margin-left: 16px;
 }
 .page-card .page-carte__p {
-  font-size: 20px;
+  font-size: 18px;
   margin-left: 16px;
   position: relative;
   bottom: 10px;
