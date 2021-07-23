@@ -8,138 +8,186 @@
     <link rel="stylesheet" href="./sass/css/style.css">
     <script src="https://kit.fontawesome.com/4dfeac96bc.js" crossorigin="anonymous"></script> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 </head>
 
 <body>
- <header class="main-header">
+  <header class="main-header">
     <div class="main-header__image"><img src="./sass/images/logo/ohmyfood@2x.svg" alt="ohmyfood"/></div>
     <h1 class="main-header__writting">
-        <span class="oh">oh</span>
-        <span class="my">my</span>
-        <span class="food">food</span>
+      <span class="oh">oh</span>
+      <span class="my">my</span>
+      <span class="food">food</span>
     </h1>
     <form method="POST" action="traitement.php">
-        <p class="main-header__p">
-            <i class="fas fa-map-marker-alt"></i>
-            <input type="search" value="Paris, Belleville">
-        </p>
+      <p class="main-header__p">
+      <i class="fas fa-map-marker-alt"></i>
+      <input type="search" value="Paris, Belleville">
+      </p>
     </form>
- </header>
+  </header>
 
- <main>
-  <div class="container1et2">
+ <!--- <div class="loader">
+    <div class="div-loader">
+      <span class="oh">oh</span>
+      <span class="my">my</span>
+      <span class="food">food</span>
+    </div>
+  </div>-->
 
-     <aside class="container1">
-         <h2 class="container1__title">Réservez le menu qui vous convient</h2>
-         <p class="container1__p1">Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
-         <p class="container1__p2">
-             <a href="#" class="btn__p2"> Explorer nos restaurants</a>
-         </p>
-     </aside>
-   
-     <nav class="container2">    
-        <h2 class="container2__title">Fonctionnement</h2>
-      <div class="divcontainer2">
-        <p class="container2__menu-commun1">
-            <span class="btn-bulle-commun1">1</span>
-            <i class="fas fa-mobile-alt"></i>
-            <a href="#" class="btn__menu-commun1">Choisissez un restaurant</a>
-        </p>
-        <p class="container2__menu-commun1">
-            <span class="btn-bulle-commun1">2</span>
-            <i class="fas fa-list"></i>
-            <a href="#" class="btn__menu-commun1">Composez votre menu</a>
-        </p>
-        <p class="container2__menu-commun1">
-            <span class="btn-bulle-commun1">3</span>
-            <i class="fas fa-store"></i>
-            <a href="#" class="btn__menu-commun1">Dégustez au restaurant</a>
-        </p>
-      </div>  
-     </nav>
-  </div>
+  <main>
+    <div class="container1et2">
+        <aside class="container1">
+            <h2 class="container1__title">Réservez le menu qui vous convient</h2>
+            <p class="container1__p1">Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
+            <p class="container1__p2"><a href="#" class="btn__p2"> Explorer nos restaurants</a></p>
+        </aside>
 
-   <section class="container-articles">
-       <h2 class="container-articles__title">Restaurants</h2>
-       <div class="divcontainer-articles">
+        <nav class="container2">    
+          <h2 class="container2__title">Fonctionnement</h2>
+            <div class="divcontainer2">
+              <p class="container2__menu-commun1">
+                <span class="btn-bulle-commun1">1</span>
+                <i class="fas fa-mobile-alt"></i>
+                <a href="#" class="btn__menu-commun1">Choisissez un restaurant</a>
+              </p>
+              <p class="container2__menu-commun1">
+                <span class="btn-bulle-commun1">2</span>
+                <i class="fas fa-list"></i>
+                <a href="#" class="btn__menu-commun1">Composez votre menu</a>
+              </p>
+              <p class="container2__menu-commun1">
+                <span class="btn-bulle-commun1">3</span>
+                <i class="fas fa-store"></i>
+                <a href="#" class="btn__menu-commun1">Dégustez au restaurant</a>
+              </p>
+            </div>  
+        </nav>  
+    </div>
+
+    <section class="container-articles">
+      <h2 class="container-articles__title">Restaurants</h2>
+      <div class="divcontainer-articles">
+
         <article class="cardcommun">
-        <a href="./sass/scss/pages/lapalettedugout.html">
+          <a href="./sass/scss/pages/lapalettedugout.html">
             <figure class="back-image">
-                <img src="./sass/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">    
+              <img src="./sass/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">    
             </figure>
-            <h3 class="cardcommun__title"><b>La palette du goût</b></h3>
-            <p class="cardcommun__p">Ménilmontant</p>
-            <i class="far fa-heart"></i>
-            <span class="cardcommun__new1">Nouveau</span>
-        </a>
-       </article>
+            <div class="cardcommun__flex1">
+              <div class="cardcommun__flex2">  
+                <h3 class="cardcommun__title"><b>La palette du goût</b></h3>
+                <p class="cardcommun__p">Ménilmontant</p>
+              </div>
+              <div class="cardcommun__flex3">
+                <span class="cardcommun__new">Nouveau</span>
+                <div class="heart">
+                  <span class="fa-stack">
+                    <i class="far  fa-heart fa-stack " aria-hidden="true"></i>
+                    <i class="far  fa-heart fa-stack fa-gradient" aria-hidden="true"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </article>
        
-       <article class="cardcommun">
-        <a href="./sass/scss/pages/lanoteenchantee.html">
+        <article class="cardcommun">
+          <a href="./sass/scss/pages/lanoteenchantee.html">
             <figure class="back-image">
-                <img src="./sass/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">    
+              <img src="./sass/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">    
             </figure>
-            <h3 class="cardcommun__title"><b>La note enchantée</b></h3>
-            <p class="cardcommun__p">Charonne</p>
-            <i class="far fa-heart"></i>
-            <span class="cardcommun__new1">Nouveau</span>
-        </a>
-       </article>
+            <div class="cardcommun__flex1">
+              <div class="cardcommun__flex2">
+                <h3 class="cardcommun__title"><b>La note enchantée</b></h3>
+                <p class="cardcommun__p">Charonne</p>
+              </div>
+              <div class="cardcommun__flex3">
+                <span class="cardcommun__new">Nouveau</span>
+                <div class="heart">
+                  <span class="fa-stack">
+                    <i class="far  fa-heart fa-stack " aria-hidden="true"></i>
+                    <i class="far  fa-heart fa-stack fa-gradient" aria-hidden="true"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </article>
 
-       <article class="cardcommun">
-        <a href="./sass/scss/pages/alafrancaise.html">
+        <article class="cardcommun">
+          <a href="./sass/scss/pages/alafrancaise.html">
             <figure class="back-image">
-                <img src="./sass/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française">    
+              <img src="./sass/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française">    
             </figure>
-            <h3 class="cardcommun__title"><b>À la française</b></h3>
-            <p class="cardcommun__p">Cité Rouge</p>
-            <i class="far fa-heart"></i>
-        </a>
-       </article>
+            <div class="cardcommun__flex1">
+              <div class="cardcommun__flex2">
+                <h3 class="cardcommun__title"><b>À la française</b></h3>
+                <p class="cardcommun__p">Cité Rouge</p>
+              </div>
+              <div class="cardcommun__flex3">
+                <div class="heart">
+                  <span class="fa-stack">
+                    <i class="far  fa-heart fa-stack " aria-hidden="true"></i>
+                    <i class="far  fa-heart fa-stack fa-gradient" aria-hidden="true"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </article>
 
-       <article class="cardcommun">
-        <a href="./sass/scss/pages/ledelicedessens.html">
+        <article class="cardcommun">
+          <a href="./sass/scss/pages/ledelicedessens.html">
             <figure class="back-image">
-                <img src="./sass/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">    
+              <img src="./sass/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">    
             </figure>
-            <h3 class="cardcommun__title"><b>Le délice des sens</b></h3>
-            <p class="cardcommun__p">Folie-Méricourt</p>
-            <i class="far fa-heart"></i>
-        </a>
-       </article>
+            <div class="cardcommun__flex1">
+              <div class="cardcommun__flex2">
+                <h3 class="cardcommun__title"><b>Le délice des sens</b></h3>
+                <p class="cardcommun__p">Folie-Méricourt</p>
+              </div>
+              <div class="cardcommun__flex3">
+                <div class="heart">
+                  <span class="fa-stack">
+                    <i class="far  fa-heart fa-stack " aria-hidden="true"></i>
+                    <i class="far  fa-heart fa-stack fa-gradient" aria-hidden="true"></i></span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </article>
     </div> 
    </section>
-   
- </main>
- <footer class="footer-main">
-     <h3 class="footer-title">ohmyfood</h3>
-     <ul class="footer-list">
-        <li>
-            <i class="fas fa-utensils"></i>
-            <a href="#">Proposer un restaurant</a>
-        </li>
-        <li>
-            <i class="fas fa-hands-helping"></i>
-            <a href="#">Devenir partenaire</a>
-        </li>
-        <li>
-            <i class="far fa-file-alt"></i>
-            <a href="#">Mentions légales</a>
-        </li>
-        <li>
-            <i class="far fa-envelope"></i>
-            <a href="mailto:contact@ohmyfood.fr">Contact</a>
-        </li>
+  </main>
+ 
+  <footer class="footer-main">
+    <h3 class="footer-title">ohmyfood</h3>
+    <ul class="footer-list">
+      <li>
+        <i class="fas fa-utensils"></i>
+        <a href="#">Proposer un restaurant</a>
+      </li>
+      <li>
+        <i class="fas fa-hands-helping"></i>
+        <a href="#">Devenir partenaire</a>
+      </li>
+      <li>
+        <i class="far fa-file-alt"></i>
+        <a href="#">Mentions légales</a>
+      </li>
+      <li>
+        <i class="far fa-envelope"></i>
+        <a href="mailto:contact@ohmyfood.fr">Contact</a>
+      </li>
     </ul>
- </footer>
-
-    
+  </footer> 
 </body>
 </html>

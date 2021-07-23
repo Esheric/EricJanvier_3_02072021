@@ -8,159 +8,236 @@
     <link rel="stylesheet" href="/sass/css/style.css">
     <script src="https://kit.fontawesome.com/4dfeac96bc.js" crossorigin="anonymous"></script> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header class="page-header">
-       <a href="/index.html"><i class="fas fa-arrow-left"></i></a>
-       <div class="page-arrow-image"><img src="/sass/images/logo/ohmyfood@2x.svg" alt="ohmyfood"/></div>
-       <h1 class="page-header__writting">ohmyfood</h1>
-       <figure class="page-header__background-image">
-            <img src="/sass/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">    
-       </figure>
-    </header>
+  <header class="page-header">
+    <a href="/index.html"><i class="fas fa-arrow-left"></i></a>
+      <div class="page-arrow-image"><img src="/sass/images/logo/ohmyfood@2x.svg" alt="ohmyfood"/></div>
+      <h1 class="page-header__writting">ohmyfood</h1>
+      <figure class="page-header__background-image">
+        <img src="/sass/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">    
+      </figure>
+  </header>
    
-    <main class="page__container">
-      <h1 class="page__container__title">La palette du goût</h1>
-      <i class="far fa-heart"></i>
-      <div class="page__section"> 
-          <aside class="page__aside1">
-            <h2 class="page-card__title">ENTRÉES</h2>
-            <div class="page-container-articles">
-            <article class="page-card">
-                <a href="#">
-                    <figure class="page-card__image">
-                        <img src="/sass/images/restaurants/fricassee-d-escargots.jpeg" alt="Fricassée d'escargot">
-                    </figure>
-                    <h2 class="page-carte__title">Fricassée d'escargot</h2>
-                    <p class="page-carte__p">Au pimet d'espelette</p>
-                    <span class="page-price">25€</span>
-                </a>
-            </article>
-            <article class="page-card">
-                <a href="#">
-                    <figure class="page-card__image">
-                        <img src="/sass/images/restaurants/Foie-gras-de-canard-mi-cuit.jpg" alt="Foie gras de canard mi-cuit">
-                    </figure>
+  <main class="page__container">
+    <h1 class="page__container__title">La palette du goût</h1>
+    <div class="page__container__flex">
+      <div class="heart">
+        <span class="fa-stack">
+          <i class="far  fa-heart fa-stack " aria-hidden="true"></i>
+          <i class="far  fa-heart fa-stack fa-gradient" aria-hidden="true"></i>
+        </span>
+      </div>
+    </div>
+    <div class="page__section"> 
+      <aside class="page__aside1">
+        <h2 class="page-card__title">ENTRÉES</h2>
+        <div class="page-container-articles">
+          <article class="page-card1">
+            <a href="#">
+              <figure class="page-card__image">
+              <img src="/sass/images/restaurants/fricassee-d-escargots.jpeg" alt="Fricassée d'escargot">
+              </figure>
+              <div class="container-intra1et2">
+                <div class="intra">
+                  <h2 class="page-carte__title">Fricassée d'escargot</h2>
+                  <p class="page-carte__p">Au pimet d'espelette</p>
+                </div>
+                <div class="intra2">
+                  <span class="page-price">25€</span>
+                  <mark class="check-circle"><i class="fas fa-check-circle"></i></mark>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <article class="page-card2">
+            <a href="#">
+              <figure class="page-card__image">
+                <img src="/sass/images/restaurants/Foie-gras-de-canard-mi-cuit.jpg" alt="Foie gras de canard mi-cuit">
+              </figure>
+              <div class="container-intra1et2">
+                <div class="intra">
                     <h2 class="page-carte__title">Foie gras de canard mi-cuit</h2>
                     <p class="page-carte__p">Et ses copeaux de truffe noire</p>
-                    <span class="page-price">35€</span>
-                </a>
-            </article>
-            <article class="page-card">
-                <a href="#">
-                    <figure class="page-card__image">
-                        <img src="/sass/images/restaurants/oeuf-au-plat.jpeg" alt="Oeuf au plat">
-                    </figure>
-                    <h2 class="page-carte__title">Oeuf au plat</h2>
-                    <p class="page-carte__p">Assaisonné à la truffe sur lit de muscade</p>
-                    <span class="page-price">20€</span>
-                </a>
-            </article>
-          </div>
-          </aside>
-          <aside class="page__aside2">
-            <h2 class="page-card__title">PLATS</h2>
-            <div class="page-container-articles">
-                <article class="page-card">
-                    <a href="#">
-                        <figure class="page-card__image">
-                            <img src="/sass/images/restaurants/Filet-de-boeuf-aux-herbes.jpeg" alt="Filet de boeuf aux herbes">
-                        </figure>
-                        <h2 class="page-carte__title">Filet de boeuf aux herbes</h2>
-                        <p class="page-carte__p">Accompagné de sa ribambelle de légume</p>
-                        <span class="page-price">40€</span>
-                    </a>
-                </article>
-                <article class="page-card">
-                    <a href="#">
-                        <figure class="page-card__image">
-                            <img src="/sass/images/restaurants/Parmentier-de-queue-de-boeuf.jpeg" alt="Parmentier de queue de boeuf">
-                        </figure>
-                        <h2 class="page-carte__title">Parmentier de queue de boeuf</h2>
-                        <p class="page-carte__p">À la truffe noire sur sa purée de panais</p>
-                        <span class="page-price">35€</span>
-                    </a>
-                </article>
-                <article class="page-card">
-                    <a href="#">
-                        <figure class="page-card__image">
-                            <img src="/sass/images/restaurants/Filet-de-Turbot.jpeg" alt="Filet de Turbot">
-                        </figure>
-                        <h2 class="page-carte__title">Filet de Turbot</h2>
-                        <p class="page-carte__p">Aux agrumes</p>
-                        <span class="page-price">44€</span>
-                    </a>
-                </article>
-            </div>
-        </aside>
-        <aside class="page__aside3">
-            <h2 class="page-card__title">DESSERTS</h2>
-            <div class="page-container-articles">
-                <article class="page-card">
-                    <a href="#">
-                        <figure class="page-card__image">
-                            <img src="/sass/images/restaurants/Paris-Brest.jpeg" alt="Paris-Brest">
-                        </figure>
-                        <h2 class="page-carte__title">Paris-Brest</h2>
-                        <p class="page-carte__p">Revisité</p>
-                        <span class="page-price">18€</span>
-                    </a>
-                </article>
-                <article class="page-card">
-                    <a href="#">
-                        <figure class="page-card__image">
-                            <img src="/sass/images/restaurants/Macaron-au-chocolat-d-exception.jpeg" alt="Macaron au chocolat d'exception">
-                        </figure>
-                        <h2 class="page-carte__title">Macaron au chocolat d'exception</h2>
-                        <p class="page-carte__p">Et glace à la vanille de Madagascar</p>
-                        <span class="page-price">22€</span>
-                    </a>
-                </article>
-                <article class="page-card">
-                    <a href="#">
-                        <figure class="page-card__image">
-                            <img src="/sass/images/restaurants/Mousse-au-chocolat.jpeg" alt="Mousse au chocolat">
-                        </figure>
-                        <h2 class="page-carte__title">Mousse au chocolat</h2>
-                        <p class="page-carte__p">Au piment d'espelette et à la truffe noire</p>
-                        <span class="page-price">23€</span>
-                    </a>
-                </article>
-            </div>
-        </aside>
+                </div>
+                <div class="intra2">
+                  <span class="page-price">35€</span>
+                  <mark class="check-circle"><i class="fas fa-check-circle"></i></mark>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <article class="page-card3">
+            <a href="#">
+              <figure class="page-card__image">
+                <img src="/sass/images/restaurants/oeuf-au-plat.jpeg" alt="Oeuf au plat">
+              </figure>
+              <div class="container-intra1et2">
+                <div class="intra">
+                  <h2 class="page-carte__title">Oeuf au plat</h2>
+                  <p class="page-carte__p">Assaisonné à la truffe sur lit de muscade</p>
+                </div>
+                <div class="intra2">
+                  <span class="page-price">20€</span>
+                  <mark class="check-circle"><i class="fas fa-check-circle"></i></mark>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
+      </aside>
+
+      <aside class="page__aside2">
+        <h2 class="page-card__title">PLATS</h2>
+        <div class="page-container-articles">
+          <article class="page-card4">
+            <a href="#">
+              <figure class="page-card__image">
+                <img src="/sass/images/restaurants/Filet-de-boeuf-aux-herbes.jpeg" alt="Filet de boeuf aux herbes">
+              </figure>
+              <div class="container-intra1et2">
+                <div class="intra">
+                  <h2 class="page-carte__title">Filet de boeuf aux herbes</h2>
+                  <p class="page-carte__p">Accompagné de sa ribambelle de légume</p>
+                </div>
+                <div class="intra2">
+                  <span class="page-price">40€</span>
+                  <mark class="check-circle"><i class="fas fa-check-circle"></i></mark>
+                </div>
+              </div>
+            </a>
+          </article>
+        
+          <article class="page-card5">
+            <a href="#">
+              <figure class="page-card__image">
+                <img src="/sass/images/restaurants/Parmentier-de-queue-de-boeuf.jpeg" alt="Parmentier de queue de boeuf">
+              </figure>
+              <div class="container-intra1et2">
+                <div class="intra">
+                  <h2 class="page-carte__title">Parmentier de queue de boeuf</h2>
+                  <p class="page-carte__p">À la truffe noire sur sa purée de panais</p>
+                </div>
+                <div class="intra2">
+                  <span class="page-price">35€</span>
+                  <mark class="check-circle"><i class="fas fa-check-circle"></i></mark>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <article class="page-card6">
+            <a href="#">
+              <figure class="page-card__image">
+                <img src="/sass/images/restaurants/Filet-de-Turbot.jpeg" alt="Filet de Turbot">
+              </figure>
+              <div class="container-intra1et2">
+                <div class="intra">
+                  <h2 class="page-carte__title">Filet de Turbot</h2>
+                  <p class="page-carte__p">Aux agrumes</p>
+                </div>
+                <div class="intra2">
+                  <span class="page-price">44€</span>
+                  <mark class="check-circle"><i class="fas fa-check-circle"></i></mark>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
+      </aside>
+      <aside class="page__aside3">
+        <h2 class="page-card__title">DESSERTS</h2>
+        <div class="page-container-articles">
+          <article class="page-card7">
+            <a href="#">
+              <figure class="page-card__image">
+                <img src="/sass/images/restaurants/Paris-Brest.jpeg" alt="Paris-Brest">
+              </figure>
+              <div class="container-intra1et2">
+                <div class="intra">
+                  <h2 class="page-carte__title">Paris-Brest</h2>
+                  <p class="page-carte__p">Revisité</p>
+                </div>
+                <div class="intra2">
+                  <span class="page-price">18€</span>
+                  <mark class="check-circle"><i class="fas fa-check-circle"></i></mark>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <article class="page-card8">
+            <a href="#">
+              <figure class="page-card__image">
+                <img src="/sass/images/restaurants/Macaron-au-chocolat-d-exception.jpeg" alt="Macaron au chocolat d'exception">
+              </figure>
+              <div class="container-intra1et2">
+                <div class="intra">
+                  <h2 class="page-carte__title">Macaron au chocolat d'exception</h2>
+                    <p class="page-carte__p">Et glace à la vanille de Madagascar</p>
+                  </div>
+                  <div class="intra2">
+                    <span class="page-price">22€</span>
+                    <mark class="check-circle"><i class="fas fa-check-circle"></i></mark>
+                  </div>
+                </div>
+            </a>
+          </article>
+
+          <article class="page-card9">
+            <a href="#">
+              <figure class="page-card__image">
+                <img src="/sass/images/restaurants/Mousse-au-chocolat.jpeg" alt="Mousse au chocolat">
+              </figure>
+              <div class="container-intra1et2">
+                <div class="intra">
+                  <h2 class="page-carte__title">Mousse au chocolat</h2>
+                  <p class="page-carte__p">Au piment d'espelette et à la truffe noire</p>
+                </div>
+                <div class="intra2">
+                  <span class="page-price">23€</span>
+                  <mark class="check-circle"><i class="fas fa-check-circle"></i></mark>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
+      </aside>
     </div>
-      <p class="page-btn">
-        <a href="#" class="page-btn__a">Commander</a>
+    <p class="page-btn">
+      <a href="#" class="page-btn__a">Commander</a>
     </p>    
-    </main>
-    <footer class="footer-page">
-        <h3 class="footer-title">ohmyfood</h3>
-        <ul class="footer-list">
-           <li>
-               <i class="fas fa-utensils"></i>
-               <a href="#">Proposer un restaurant</a>
-           </li>
-           <li>
-               <i class="fas fa-hands-helping"></i>
-               <a href="#">Devenir partenaire</a>
-           </li>
-           <li>
-               <i class="far fa-file-alt"></i>
-               <a href="#">Mentions légales</a>
-           </li>
-           <li>
-               <i class="far fa-envelope"></i>
-               <a href="mailto:contact@ohmyfood.fr">Contact</a>
-           </li>
-       </ul>
-    </footer>    
+  </main>
+  <footer class="footer-page">
+    <h3 class="footer-title">ohmyfood</h3>
+      <ul class="footer-list">
+        <li>
+          <i class="fas fa-utensils"></i>
+          <a href="#">Proposer un restaurant</a>
+        </li>
+        <li>
+          <i class="fas fa-hands-helping"></i>
+          <a href="#">Devenir partenaire</a>
+        </li>
+        <li>
+          <i class="far fa-file-alt"></i>
+          <a href="#">Mentions légales</a>
+        </li>
+        <li>
+          <i class="far fa-envelope"></i>
+          <a href="mailto:contact@ohmyfood.fr">Contact</a>
+        </li>
+      </ul>
+  </footer>    
 </body>
 </html>

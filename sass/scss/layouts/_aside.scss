@@ -1,7 +1,7 @@
 .container1{
     @extend .container;
     background-color: lighten($color: $color-quatenary, $amount: 4%);
-    margin-top: -40px;
+    margin-top: -25px;
 }
 
 .container1__title{

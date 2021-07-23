@@ -33,39 +33,25 @@
     @extend .page-container;
     position: relative;
     bottom: 6rem;
+    .page__container__flex{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
     .page__container__title{
         font-size: 30px;
         position: relative;
-        top: 45px;
-        left: 15px;
+        top: 80px;
+        right: 4rem;
         text-align: center;
     }
     .page-card__title{
-        padding-top: 3rem;
-        padding-left: 1rem;
-    }
-    .far{
-        float: right;
-        font-size: 40px;
-        position: relative;
-        bottom: 20px;
-        right: 30px;  
+        margin-top: 7rem;
+        padding-left: 25px;
     }
 }
 
 .page-card{
-    border: 0.19rem white solid;
-    border-radius: 1.25rem;
-    background-color: white;
-    height: 100px;
-    width: 90%;
-    margin-bottom: 4rem;
-    margin-left: 1rem;
-    box-shadow: 0 0 1rem #0000002E;
-    &:hover{
-        background-color: lighten($color: $color-tertiary, $amount: 24%);
-        box-shadow: 2px 3px 10px darken($color: $color-quatenary, $amount: 50%);
-    }
     a{
         text-decoration: none;
         color: black;
@@ -73,25 +59,125 @@
     img{
         display: none;
     }
-    
+
+    .container-intra1et2{
+        display: flex;
+        justify-content: space-between;
+        .intra{
+            white-space: nowrap;
+            overflow: hidden;
+            width: 100%;
+        }
+        .intra2{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
     .page-carte__title{
-        margin-left: 16px;
+        margin-left: 5px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-top: 0;
     }
 
     .page-carte__p{
         font-size: 18px;
-        margin-left: 16px;
-        position: relative;
-        bottom: 10px;
+        margin-left: 5px;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .page-price{
-        font-size: 20px;
-        float: right;
+        font-size: 18px;
         position: relative;
-        right: 30px;
-        bottom: 55px;
+        top: 3rem;
+        padding-right: 13px;
     }
+}
+
+.page-card1{
+    @extend .page-card;
+    animation-delay: .2s;
+}
+
+.page-card2{
+    @extend .page-card;
+    animation-delay: .6s;
+}
+
+.page-card3{
+    @extend .page-card;
+    animation-delay: 1.2s;
+}
+
+.page-card4{
+    @extend .page-card;
+    animation-delay: 1.6s;
+}
+
+.page-card5{
+    @extend .page-card;
+    animation-delay: 2.2s;
+}
+
+.page-card6{
+    @extend .page-card;
+    animation-delay: 2.6s;
+}
+
+.page-card7{
+    @extend .page-card;
+    animation-delay: 3.2s;
+}
+
+.page-card8{
+    @extend .page-card;
+    animation-delay: 3.6s;
+}
+
+.page-card9{
+    @extend .page-card;
+    animation-delay: 4.2s;
+}
+
+.page-card10{
+    @extend .page-card;
+    animation-delay: 4.6s;
+}
+
+mark.check-circle{
+    display: flex;
+    background-color: $color-tertiary;
+    width: 0;
+    height: 106px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 1.25rem 1.25rem 0;
+    color: black; 
+    float: right;
+    margin-top: -19px;
+    margin-right: -3px;
+ }
+
+mark.check-circle i{
+    border-radius: 50%;
+    padding: .5rem;
+    color: white;
+    font-size: 35px;
+}
+
+article.page-card:hover mark.check-circle{
+    animation: slide .5s ease-in forwards;
+}
+
+article.page-card:hover mark.check-circle i{
+    animation: rotate .5s both;
+}
+
+.fa-check:before {
+    content: "\f00c";
 }
 
 .page-btn{
@@ -113,7 +199,7 @@
 
 .page__container2{
     @extend .page__container;
-    height: 140rem;
+    height: 162rem;
 
 }
 

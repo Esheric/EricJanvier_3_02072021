@@ -1,7 +1,7 @@
 .container-articles{
     @extend .container-articles;
     background-color: lighten($color: $color-quatenary, $amount: 5%);
-    padding-left: 2rem;
+    /*padding-left: 2rem;*/
     .container-articles__title{
         padding-top: 3rem;
         font-size: 30px;
@@ -14,7 +14,8 @@
     border: 1px solid $color-quatenary;
     border-radius: 1rem;
     background-color: lighten($color: $color-quatenary, $amount: 90%);
-    margin-top: 2rem;
+    margin: auto;
+    margin-bottom: 2rem;
     &:hover{
         background-color: lighten($color: $color-tertiary, $amount: 24%);
         box-shadow: 2px 3px 10px darken($color: $color-quatenary, $amount: 50%);
@@ -44,20 +45,59 @@
         font-size: 20px;
     }
 
-    .cardcommun__new1{
+    .cardcommun__new{
         @extend .btn-new;
         float: right;
         position: relative;
-        bottom: 18rem;
+        bottom: 15rem;
         right: 1rem;
         font-weight: bolder;
-    }
+        -webkit-animation: blink-1 .6s both;
+                animation: blink-1 .6s both;
+                animation-duration: 5s;
+    }  
+}
 
-    .far{
-        float: right;
-        font-size: 30px;
-        position: relative;
-        bottom: 70px;
-        right: 30px;  
-    }
+.heart{ 
+    position:absolute;
+    box-sizing: border-box;
+    width: 55px;
+    height:55px;
+   & .fa-heart{
+        position:absolute;
+        font-size: 35px;  
+        color: black;
+        }
+  & .fa-gradient{
+    width:55px;
+    height:75px;
+  }
+  & .fa-gradient:hover{
+            cursor:pointer; 
+            font-weight:bold;
+            -moz-animation:backgroundtwo .5s;
+            -webkit-animation:backgroundtwo  .5s;
+            animation: backgroundtwo .5s;
+            background:$color-heart;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+  }
+}
+
+.cardcommun__flex1{
+    display: flex;
+    flex-direction: column;
+}
+
+.cardcommun__flex2{
+    display: flex;
+    flex-direction: column;
+}
+
+.cardcommun__flex3{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: -5rem;
 }
