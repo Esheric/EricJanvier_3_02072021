@@ -51,6 +51,12 @@
     }
 }
 
+/*main.page__container2 div.page__container__flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }*/
+
 .page-card{
     a{
         text-decoration: none;
@@ -169,11 +175,11 @@ mark.check-circle i{
 }
 
 article.page-card:hover mark.check-circle{
-    animation: slide .5s ease-in forwards;
+    animation: card-slide .5s ease-in forwards;
 }
 
 article.page-card:hover mark.check-circle i{
-    animation: rotate .5s both;
+    animation: card-rotate .5s both;
 }
 
 .fa-check:before {

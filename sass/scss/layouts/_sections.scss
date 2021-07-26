@@ -52,8 +52,8 @@
         bottom: 15rem;
         right: 1rem;
         font-weight: bolder;
-        -webkit-animation: blink-1 .6s both;
-                animation: blink-1 .6s both;
+        -webkit-animation: new-turn-signal .6s both;
+                animation: new-turn-signal .6s both;
                 animation-duration: 5s;
     }  
 }
@@ -63,6 +63,8 @@
     box-sizing: border-box;
     width: 55px;
     height:55px;
+    padding-top: 4px;
+    margin-left: 16px;
    & .fa-heart{
         position:absolute;
         font-size: 35px;  
@@ -75,9 +77,9 @@
   & .fa-gradient:hover{
             cursor:pointer; 
             font-weight:bold;
-            -moz-animation:backgroundtwo .5s;
-            -webkit-animation:backgroundtwo  .5s;
-            animation: backgroundtwo .5s;
+            -moz-animation: heart-full .5s;
+            -webkit-animation: heart-full .5s;
+            animation: heart-full .5s;
             background:$color-heart;
             -webkit-background-clip: text;
             background-clip: text;

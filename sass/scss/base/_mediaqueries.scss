@@ -83,6 +83,23 @@
         }
     }
 
+    /*main.page-container div.page__container__flex{
+        display: flex;
+        justify-content: center;
+        .heart{ 
+            position: relative;
+        }
+    }
+
+    main.page-container2 div.page__container__flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        .heart{ 
+            position:initial;
+        }
+    }*/
+
     .footer-title{
         padding-left: 0rem;
         padding-right: 5rem;
@@ -132,7 +149,7 @@
             top: 16px;
         }
 
-        @keyframes slide{
+        @keyframes card-slide{
             from {
               width: 0;
             }
@@ -250,7 +267,7 @@
         height: 120px;
         border-top-right-radius: initial;
     }
-    @keyframes slide{
+    @keyframes card-slide{
         from {
           width: 0;
         }
