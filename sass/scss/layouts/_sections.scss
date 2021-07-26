@@ -1,5 +1,5 @@
 .container-articles{
-    @extend .container-articles;
+    @include container-articles;
     background-color: lighten($color: $color-quatenary, $amount: 5%);
     /*padding-left: 2rem;*/
     .container-articles__title{
@@ -10,7 +10,7 @@
 
 .cardcommun{
     width: 90%;
-    height: 21rem;
+    height: 19rem;
     border: 1px solid $color-quatenary;
     border-radius: 1rem;
     background-color: lighten($color: $color-quatenary, $amount: 90%);
@@ -38,23 +38,26 @@
     .cardcommun__title{
         padding-left: 1rem;
         font-size: 20px;
+        margin-bottom: -1rem;
     }
 
     .cardcommun__p{
         padding-left: 1rem;
         font-size: 20px;
+        padding-bottom: 3rem;
     }
 
     .cardcommun__new{
-        @extend .btn-new;
+        @include btn-new;
         float: right;
         position: relative;
-        bottom: 15rem;
+        bottom: 11rem;
         right: 1rem;
         font-weight: bolder;
         -webkit-animation: new-turn-signal .6s both;
                 animation: new-turn-signal .6s both;
-                animation-duration: 5s;
+                animation-duration: 3s;
+                animation-iteration-count: 2;
     }  
 }
 
@@ -101,5 +104,5 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    margin-top: -5rem;
+    margin-top: -8rem;
 }

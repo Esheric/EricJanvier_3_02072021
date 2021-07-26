@@ -38,8 +38,8 @@
         }
     }
 
-    .container-articles{
-        height: 60rem;
+    main .container-articles{
+        height: 55rem;
         }
         .divcontainer-articles{
         display: flex;
@@ -76,29 +76,16 @@
         }
     }
 
-    .page-container{
+    main.page__container{
         height: 180rem;
         .page-btn{
             top: 65px;
         }
     }
 
-    /*main.page-container div.page__container__flex{
-        display: flex;
-        justify-content: center;
-        .heart{ 
-            position: relative;
-        }
+    body.body-lanoteenchantee main.page__container2{
+        height: 196rem;
     }
-
-    main.page-container2 div.page__container__flex{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        .heart{ 
-            position:initial;
-        }
-    }*/
 
     .footer-title{
         padding-left: 0rem;
@@ -159,9 +146,6 @@
           }
            
     }
-        main.page__container2{
-            height: 196rem;
-    }
 
     .footer-main{
             height: 8rem;
@@ -218,14 +202,17 @@
         height: 131rem;
         bottom: -10rem;
     }
+    
+    body.body-lanoteenchantee main.page__container2{
+        height: 158rem;
+    }
 
     footer.footer-page{
         margin-top: 10rem;
     }
 
-    main.page__container2{
-        height: 158rem;
-
+    body.body-lanoteenchantee footer.footer-page2{
+        margin-top: -6rem;
     }
 
     .page-container-articles{

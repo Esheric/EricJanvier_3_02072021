@@ -22,7 +22,15 @@
     a {
         text-decoration: none;
         color: lighten($color: $color-primary, $amount: 70%);
+        text-decoration: none;
+        background: linear-gradient(to top, $color-tertiary 0%, $color-tertiary 10%, transparent 10.01%) no-repeat /*background-size*/ left bottom / 0 100%;
+        transition: background-size .5s;
     }
+
+    a:hover {
+    background-size: 100% 100%;
+    }
+
     .far{
         display: none;
     }

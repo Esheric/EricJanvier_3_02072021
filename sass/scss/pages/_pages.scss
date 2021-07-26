@@ -30,7 +30,7 @@
 }
 
 .page__container{
-    @extend .page-container;
+    @include page-container;
     position: relative;
     bottom: 6rem;
     .page__container__flex{
@@ -49,13 +49,62 @@
         margin-top: 7rem;
         padding-left: 25px;
     }
+
+    .page-card__title {
+        text-decoration: none; 
+        position: relative; 
+      }   
+ 
+     .page-card__title:after {
+        position: absolute;
+        content: '';
+        height: 4px;
+        bottom: -4px;
+        left: 26px;
+        right: 19rem;
+        width: 59px;
+        background: $color-tertiary;
+        -o-transition:.5s;
+        -ms-transition:.5s;
+        -moz-transition:.5s;
+        -webkit-transition:.5s;
+        transition:.5s;
+     }
 }
 
-/*main.page__container2 div.page__container__flex{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }*/
+.page__aside1{
+    .page-card__title:hover:after {
+        width: 102px;
+        left: 24px;
+        right: 18rem;
+        background: linear-gradient( to right, $color-tertiary, $color-tertiary, $color-secondary);
+    }
+}
+
+.page__aside2{
+    .page-card__title:hover:after {
+        width: 72px;
+        left: 24px;
+        right: 18rem;
+        background: linear-gradient( to right, $color-tertiary, $color-tertiary, $color-secondary);
+    }
+}
+
+.page__aside3{
+    .page-card__title:hover:after {
+        width: 115px;
+        left: 24px;
+        right: 18rem;
+        background: linear-gradient( to right, $color-tertiary, $color-tertiary, $color-secondary);
+    }
+}
+
+main.page__container2{
+    @extend .page__container;
+    height: 162rem;
+
+}
+
 
 .page-card{
     a{
@@ -88,7 +137,7 @@
     }
 
     .page-carte__p{
-        font-size: 18px;
+        font-size: 17px;
         margin-left: 5px;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -201,12 +250,6 @@ article.page-card:hover mark.check-circle i{
 .footer-page{
     @extend.footer-main;
     margin-top: -6rem;
-}
-
-.page__container2{
-    @extend .page__container;
-    height: 162rem;
-
 }
 
 .footer-page2{
