@@ -39,10 +39,10 @@ header, footer{
 .main-header__p input{
         background-color: $color-quatenary;
         border-style: none;
-        padding-left: 15px;
         height: 3rem;
         width: 11rem;
-        font-size: 20px;
+        font-size: 16px;
+        text-align: center;
 }
 
 .main-header__p input:focus{
