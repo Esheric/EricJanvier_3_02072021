@@ -226,7 +226,7 @@
   }
 
   .container1 {
-    background-image: url(/sass/images/restaurants/luxe.jpg);
+    background-image: url(../../../sass/images/restaurants/luxe.jpg);
   }
   .container1 .container1__title, .container1 .container1__p1 {
     text-shadow: 2px 2px white;
