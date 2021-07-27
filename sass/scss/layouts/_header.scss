@@ -36,24 +36,30 @@ header, footer{
         background-color: $color-quatenary;
 }
 
-.main-header__p input{
+input{
         background-color: $color-quatenary;
         border-style: none;
         height: 3rem;
-        width: 16rem;
+        width: 10rem;
         font-size: 20px;
         text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-left: 10px;
 }
 
-.main-header__p input:focus{
+input:focus{
         outline: none;
-        width: 16rem;
+        width: 10rem;
         font-size: 20px;
-        border: 1px dashed $color-primary;
-        border-color: $color-primary;
-        background: linear-gradient(90deg, $color-primary 50%, transparent 50%), 
-                    linear-gradient(90deg, $color-primary 50%, transparent 50%), 
-                    linear-gradient(0deg, $color-secondary 50%, transparent 50%), 
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
+        border: 1px dashed $color-secondary;
+        border-color: $color-secondary;
+        background: linear-gradient(90deg, $color-secondary 50%, transparent 50%), 
+                    linear-gradient(90deg, $color-secondary 50%, transparent 50%), 
+                    linear-gradient(0deg, $color-primary 50%, transparent 50%), 
                     linear-gradient(0deg, $color-tertiary 50%, transparent 50%);
         background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
         background-size: 16px 4px, 16px 4px, 4px 16px, 4px 16px;
@@ -63,7 +69,7 @@ header, footer{
         animation: dashed-turn 5s linear infinite;
 }
 
-.seek{
+.search, .seek{
         display: none ;
     }  
 span.i-seek i.fas{
