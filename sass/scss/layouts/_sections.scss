@@ -19,6 +19,14 @@
     &:hover{
         background-color: lighten($color: $color-tertiary, $amount: 24%);
         box-shadow: 2px 3px 10px darken($color: $color-quatenary, $amount: 50%);
+        -webkit-transition: all 250ms ease-in;
+        -webkit-transform: scale(0.9);
+        -ms-transition: all 250ms ease-in;
+        -ms-transform: scale(0.9);   
+        -moz-transition: all 250ms ease-in;
+        -moz-transform: scale(0.9);
+        transition: all 250ms ease-in;
+        transform: scale(0.9);
     }
     a{
         text-decoration-line: none;
@@ -55,9 +63,9 @@
         right: 1rem;
         font-weight: bolder;
         -webkit-animation: new-turn-signal .6s both;
-                animation: new-turn-signal .6s both;
-                animation-duration: 3s;
-                animation-iteration-count: 2;
+        animation: new-turn-signal .6s both;
+        animation-duration: 3s;
+        animation-iteration-count: 2;
     }  
 }
 
@@ -103,6 +111,6 @@
 .cardcommun__flex3{
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     margin-top: -8rem;
 }

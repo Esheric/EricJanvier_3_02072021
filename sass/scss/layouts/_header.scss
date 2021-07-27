@@ -47,9 +47,23 @@ header, footer{
 
 .main-header__p input:focus{
         outline: none;
-        border: 1px dashed $color-secondary;
-        border-right-color: $color-primary;
-        border-left-color: $color-secondary;
-        border-bottom-color: $color-primary;
-        border-radius: 25px;
+        border: 1px dashed $color-primary;
+        border-color: $color-primary;
+        background: linear-gradient(90deg, $color-primary 50%, transparent 50%), 
+                    linear-gradient(90deg, $color-primary 50%, transparent 50%), 
+                    linear-gradient(0deg, $color-secondary 50%, transparent 50%), 
+                    linear-gradient(0deg, $color-tertiary 50%, transparent 50%);
+        background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+        background-size: 16px 4px, 16px 4px, 4px 16px, 4px 16px;
+        background-position: 0% 0%, 100% 100%, 0% 100%, 100% 0px;
+        border-radius: 5px;
+        padding: 10px;
+        animation: dashed-turn 5s linear infinite;
 }
+
+.seek{
+        display: none ;
+    }  
+span.i-seek i.fas{
+        display: none;
+    }

@@ -8,6 +8,18 @@
     text-decoration: none; 
     border-color: white;
     background-color: white; 
+    &:hover{
+        color: white;
+        background-color: black;
+        -webkit-transition: all 250ms ease-in;
+        -webkit-transform: scale(1.5);
+        -ms-transition: all 250ms ease-in;
+        -ms-transform: scale(1.5);   
+        -moz-transition: all 250ms ease-in;
+        -moz-transform: scale(1.5);
+        transition: all 250ms ease-in;
+        transform: scale(1.5);
+    }
 }
 
 .page-arrow-image{
@@ -239,11 +251,24 @@ article.page-card:hover mark.check-circle i{
     text-align: center;
     position: relative;
     top: 45px;
+    &:hover{
+        -webkit-transition: all 250ms ease-in;
+        -webkit-transform: scale(0.9);
+        -ms-transition: all 250ms ease-in;
+        -ms-transform: scale(0.9);   
+        -moz-transition: all 250ms ease-in;
+        -moz-transform: scale(0.9);
+        transition: all 250ms ease-in;
+        transform: scale(0.9);
+    }
     .page-btn__a{
         @extend .btn-colorer;
         font-weight: bolder;
         padding-left: 60px;
         padding-right: 60px;
+        &:hover{
+            box-shadow: 0 0 1rem darken($color: $color-tertiary, $amount: 50%);
+        }
     }
 }
 

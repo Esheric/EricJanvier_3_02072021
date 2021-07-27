@@ -107,6 +107,11 @@
     opacity: 0;
   }
 }
+@keyframes dashed-turn {
+  to {
+    background-position: 100% 0%, 0% 100%, 0% 0%, 100% 100%;
+  }
+}
 .header-container, .main-header form, .main-header__image, .page-arrow-image {
   width: 100%;
   height: 4rem;
@@ -169,6 +174,57 @@
     color: #99E2D0;
   }
 
+  .main-header form {
+    height: 5rem;
+  }
+  .main-header form .main-header__p {
+    display: flex;
+    flex-direction: row;
+  }
+
+  span.i-search {
+    border: 1px solid #FF79DA;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding-left: 13px;
+    padding-right: 25px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #FF79DA;
+    font-size: 27px;
+  }
+  span.i-search i {
+    position: relative;
+    left: 8px;
+  }
+
+  form p.main-header__p input {
+    border: 1px solid #9356DC;
+    border-right: none;
+    border-left: none;
+    padding-left: 29px;
+    height: 50px;
+    width: 13rem;
+    font-size: 20px;
+  }
+
+  span.i-seek {
+    border: 1px solid #99E2D0;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding-left: 13px;
+    padding-right: 25px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    cursor: pointer;
+    background-color: #99E2D0;
+    font-size: 27px;
+  }
+
+  div.btn-seek span.i-seek i.fas {
+    display: initial;
+  }
+
   .container1 {
     background-image: url(/sass/images/restaurants/luxe.jpg);
   }
@@ -186,14 +242,24 @@
   main .container-articles {
     height: 55rem;
   }
-
-  .divcontainer-articles {
+  main .container-articles .divcontainer-articles {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
-  .divcontainer-articles .cardcommun {
+  main .container-articles .divcontainer-articles .cardcommun {
     width: 40%;
+  }
+
+  article.cardcommun:hover {
+    -webkit-transition: all 250ms ease-in;
+    -webkit-transform: scale(1.1);
+    -ms-transition: all 250ms ease-in;
+    -ms-transform: scale(1.1);
+    -moz-transition: all 250ms ease-in;
+    -moz-transform: scale(1.1);
+    transition: all 250ms ease-in;
+    transform: scale(1.1);
   }
 
   .page-header {
@@ -330,6 +396,24 @@
   }
 }
 @media only screen and (min-width: 1100px) {
+  div.btn-seek span.i-seek {
+    display: none;
+  }
+
+  div.btn-seek span.seek {
+    display: initial;
+    border: 1px solid #99E2D0;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding-left: 13px;
+    padding-right: 25px;
+    padding-top: 12px;
+    padding-bottom: 11px;
+    cursor: pointer;
+    background-color: #99E2D0;
+    font-size: 23px;
+  }
+
   figure.page-header__background-image img {
     height: 40rem;
   }
@@ -577,11 +661,23 @@ header, footer {
 
 .main-header__p input:focus {
   outline: none;
-  border: 1px dashed #FF79DA;
-  border-right-color: #9356DC;
-  border-left-color: #FF79DA;
-  border-bottom-color: #9356DC;
-  border-radius: 25px;
+  border: 1px dashed #9356DC;
+  border-color: #9356DC;
+  background: linear-gradient(90deg, #9356DC 50%, transparent 50%), linear-gradient(90deg, #9356DC 50%, transparent 50%), linear-gradient(0deg, #FF79DA 50%, transparent 50%), linear-gradient(0deg, #99E2D0 50%, transparent 50%);
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  background-size: 16px 4px, 16px 4px, 4px 16px, 4px 16px;
+  background-position: 0% 0%, 100% 100%, 0% 100%, 100% 0px;
+  border-radius: 5px;
+  padding: 10px;
+  animation: dashed-turn 5s linear infinite;
+}
+
+.seek {
+  display: none;
+}
+
+span.i-seek i.fas {
+  display: none;
 }
 
 .container1 {
@@ -611,6 +707,21 @@ header, footer {
   border-top-color: #FF79DA;
   border-radius: 50px;
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
+}
+
+.container1__p2:hover {
+  -webkit-transition: all 250ms ease-in;
+  -webkit-transform: scale(0.9);
+  -ms-transition: all 250ms ease-in;
+  -ms-transform: scale(0.9);
+  -moz-transition: all 250ms ease-in;
+  -moz-transform: scale(0.9);
+  transition: all 250ms ease-in;
+  transform: scale(0.9);
+}
+
+aside p.container1__p2 a.btn__p2:hover {
+  box-shadow: 0 0 1rem #1b6150;
 }
 
 .container2 .container2__title {
@@ -674,6 +785,14 @@ header, footer {
 .cardcommun:hover {
   background-color: #f8fdfc;
   box-shadow: 2px 3px 10px #6b6b6b;
+  -webkit-transition: all 250ms ease-in;
+  -webkit-transform: scale(0.9);
+  -ms-transition: all 250ms ease-in;
+  -ms-transform: scale(0.9);
+  -moz-transition: all 250ms ease-in;
+  -moz-transform: scale(0.9);
+  transition: all 250ms ease-in;
+  transform: scale(0.9);
 }
 .cardcommun a {
   text-decoration-line: none;
@@ -760,7 +879,7 @@ header, footer {
 .cardcommun__flex3 {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   margin-top: -8rem;
 }
 
@@ -809,6 +928,18 @@ header, footer {
   text-decoration: none;
   border-color: white;
   background-color: white;
+}
+.page-header a:hover {
+  color: white;
+  background-color: black;
+  -webkit-transition: all 250ms ease-in;
+  -webkit-transform: scale(1.5);
+  -ms-transition: all 250ms ease-in;
+  -ms-transform: scale(1.5);
+  -moz-transition: all 250ms ease-in;
+  -moz-transform: scale(1.5);
+  transition: all 250ms ease-in;
+  transform: scale(1.5);
 }
 
 .page-header__writting {
@@ -1014,10 +1145,23 @@ article.page-card:hover mark.check-circle i, article.page-card1:hover mark.check
   position: relative;
   top: 45px;
 }
+.page-btn:hover {
+  -webkit-transition: all 250ms ease-in;
+  -webkit-transform: scale(0.9);
+  -ms-transition: all 250ms ease-in;
+  -ms-transform: scale(0.9);
+  -moz-transition: all 250ms ease-in;
+  -moz-transform: scale(0.9);
+  transition: all 250ms ease-in;
+  transform: scale(0.9);
+}
 .page-btn .page-btn__a {
   font-weight: bolder;
   padding-left: 60px;
   padding-right: 60px;
+}
+.page-btn .page-btn__a:hover {
+  box-shadow: 0 0 1rem #1b6150;
 }
 
 .footer-page, .footer-page2 {
