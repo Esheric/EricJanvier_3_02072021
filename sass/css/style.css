@@ -947,7 +947,7 @@ aside p.container1__p2 a.btn__p2:hover {
   text-decoration: none;
   color: white;
   text-decoration: none;
-  background: linear-gradient(to top, #99E2D0 0%, #99E2D0 10%, transparent 10.01%) no-repeat left bottom/0 100%;
+  background: linear-gradient(to top, #FF79DA 0%, #FF79DA 10%, transparent 10.01%) no-repeat left bottom/0 100%;
   transition: background-size 0.5s;
 }
 .footer-list a:hover {
