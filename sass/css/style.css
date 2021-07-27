@@ -203,8 +203,8 @@
     border-right: none;
     border-left: none;
     height: 50px;
-    width: 13rem;
-    font-size: 16px;
+    width: 16rem;
+    font-size: 20px;
   }
 
   span.i-seek {
@@ -653,13 +653,15 @@ header, footer {
   background-color: #eaeaea;
   border-style: none;
   height: 3rem;
-  width: 11rem;
-  font-size: 16px;
+  width: 16rem;
+  font-size: 20px;
   text-align: center;
 }
 
 .main-header__p input:focus {
   outline: none;
+  width: 16rem;
+  font-size: 20px;
   border: 1px dashed #9356DC;
   border-color: #9356DC;
   background: linear-gradient(90deg, #9356DC 50%, transparent 50%), linear-gradient(90deg, #9356DC 50%, transparent 50%), linear-gradient(0deg, #FF79DA 50%, transparent 50%), linear-gradient(0deg, #99E2D0 50%, transparent 50%);

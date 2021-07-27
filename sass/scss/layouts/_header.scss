@@ -40,13 +40,15 @@ header, footer{
         background-color: $color-quatenary;
         border-style: none;
         height: 3rem;
-        width: 11rem;
-        font-size: 16px;
+        width: 16rem;
+        font-size: 20px;
         text-align: center;
 }
 
 .main-header__p input:focus{
         outline: none;
+        width: 16rem;
+        font-size: 20px;
         border: 1px dashed $color-primary;
         border-color: $color-primary;
         background: linear-gradient(90deg, $color-primary 50%, transparent 50%), 
