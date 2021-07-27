@@ -969,7 +969,6 @@ aside p.container1__p2 a.btn__p2:hover {
 .page__container .page__container__flex, main.page__container2 .page__container__flex {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-between;
 }
 .page__container .page__container__title, main.page__container2 .page__container__title {
   font-size: 30px;
