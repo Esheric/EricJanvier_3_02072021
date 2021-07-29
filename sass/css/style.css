@@ -399,18 +399,6 @@
     width: 35%;
   }
 }
-/*body.all main.page__container{
-     height: 129em;
-      .page-btn{
-     top: 120px;
-  }
-}*/
-/*body.body-lanoteenchantee main.page__container2{
-   height: 138rem;  
-   .page-btn{
-       top: 110px;
-   }
-}*/
 article.page-card, article.page-card10, article.page-card9, article.page-card8, article.page-card7, article.page-card6, article.page-card5, article.page-card4, article.page-card3, article.page-card2, article.page-card1 {
   margin-bottom: -4rem;
 }
@@ -536,17 +524,6 @@ footer .footer-page2 {
     margin-top: -3rem;
   }
 }
-/*@mixin container-articles{
-    height: 93.5rem;
-    width: 100%;
-}*/
-/*@mixin page-container{
-    background-color: $color-quatenary;
-    width: 100%;
-    height: 100rem;
-    border-top-right-radius: 50px;
-    border-top-left-radius: 50px;
-}*/
 .btn-colorer, .page-btn .page-btn__a, .btn__p2 {
   padding-right: 16px;
   padding-left: 16px;
@@ -679,7 +656,7 @@ h1, h3, img, .oh, .my, .food, .container1__title, .container2__title, .container
 }
 
 body {
-  min-width: 400px;
+  min-width: auto;
 }
 
 main, .page__container, main.page__container2 {
