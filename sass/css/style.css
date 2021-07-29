@@ -1230,4 +1230,8 @@ article.page-card:hover mark.check-circle i, article.page-card1:hover mark.check
   margin-top: -6rem;
 }
 
+body.body-lanoteenchantee, body.body-commun {
+  min-width: 375px;
+}
+
 /*# sourceMappingURL=style.css.map */
