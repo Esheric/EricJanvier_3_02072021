@@ -41,8 +41,12 @@
     }
 }
 
-.page__container{
-    @include page-container;
+main.page__container{
+    background-color: $color-quatenary;
+    width: 100%;
+    height: 100rem;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;;
     position: relative;
     bottom: 6rem;
     .page__container__flex{
@@ -50,40 +54,47 @@
         flex-direction: row-reverse;
     }
     .page__container__title{
-        font-size: 30px;
+        font-size: 28px;
         position: relative;
-        top: 80px;
-        right: 4rem;
+        top: 35px;
+        right: 25px;
         text-align: center;
     }
     .page-card__title{
         margin-top: 7rem;
         padding-left: 25px;
-    }
-
-    .page-card__title {
+        bottom: -4rem;
         text-decoration: none; 
         position: relative; 
-      }   
- 
-     .page-card__title:after {
+        top: 60px;
+    }
+    .page-card__title:after {
         position: absolute;
-        content: '';
+        content: " ";
         height: 4px;
         bottom: -4px;
         left: 26px;
         right: 19rem;
         width: 59px;
-        background: $color-tertiary;
+        background: $color-tertiary; 
+        transition:.5s;
+        -webkit-transition:.5s;
         -o-transition:.5s;
         -ms-transition:.5s;
         -moz-transition:.5s;
-        -webkit-transition:.5s;
-        transition:.5s;
      }
+
+     .fa-stack {
+         margin-top: -25px;
+     }
+
+     .page-carte__title{
+        font-size: 21px;
+    }  
 }
 
-.page__aside1{
+.page__bloc1{
+    margin-top: -6rem;
     .page-card__title:hover:after {
         width: 102px;
         left: 24px;
@@ -92,7 +103,8 @@
     }
 }
 
-.page__aside2{
+.page__bloc2{
+    margin-top: -8rem;
     .page-card__title:hover:after {
         width: 72px;
         left: 24px;
@@ -101,7 +113,8 @@
     }
 }
 
-.page__aside3{
+.page__bloc3{
+    margin-top: -8rem;
     .page-card__title:hover:after {
         width: 115px;
         left: 24px;
@@ -112,10 +125,8 @@
 
 main.page__container2{
     @extend .page__container;
-    height: 162rem;
-
+    height: 107rem;
 }
-
 
 .page-card{
     a{
@@ -250,6 +261,7 @@ article.page-card:hover mark.check-circle i{
     text-align: center;
     position: relative;
     top: 45px;
+    top: 115px;
     &:hover{
         -webkit-transition: all 250ms ease-in;
         -webkit-transform: scale(0.9);

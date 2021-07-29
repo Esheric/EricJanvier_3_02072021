@@ -142,15 +142,16 @@
         }
     }
 
-    main.page__container{
-        height: 180rem;
-        .page-btn{
-            top: 65px;
+    body.body-commun main.page__container{
+        height: 128rem;
+        .body-commun .page-btn{
+            position: relative;
+            top: 10px;
         }
     }
 
-    body.body-lanoteenchantee main.page__container2{
-        height: 196rem;
+    .body-lanoteenchantee main.page__container2{
+        height: 138rem;
     }
 
     .footer-title{
@@ -226,6 +227,7 @@
 }
 
 @media #{$tablet-up} {
+
     .container2{
         height: 15rem;
         h2.container2__title{
@@ -256,6 +258,29 @@
              width: 35%;
         }
     }
+}
+
+    /*body.all main.page__container{
+        height: 129em;
+         .page-btn{
+        top: 120px;
+     }
+   }*/
+
+ /*body.body-lanoteenchantee main.page__container2{
+    height: 138rem;  
+    .page-btn{
+        top: 110px;
+    }
+ }*/
+
+
+ article.page-card{
+    margin-bottom: -4rem;
+ }
+
+ footer .footer-page2{
+    margin-top: -6rem;
 }
 
 
@@ -307,20 +332,19 @@
     }
 
     figure.page-header__background-image img{
-        height: 40rem;
+        height: 30rem;
     }
 
-    main.page__container{
-        height: 131rem;
-        bottom: -10rem;
+    body.body-commun main.page__container{
+        height: 94rem;
     }
     
     body.body-lanoteenchantee main.page__container2{
-        height: 158rem;
+        height: 113rem;
     }
 
     footer.footer-page{
-        margin-top: 10rem;
+        margin-top: -6rem;
     }
 
     body.body-lanoteenchantee footer.footer-page2{
@@ -374,4 +398,8 @@
           width: 170px;
         }
       }
+
+      div.page__bloc2, div.page__bloc3{
+         margin-top: -3rem;
+        }
 }
