@@ -679,8 +679,7 @@ h1, h3, img, .oh, .my, .food, .container1__title, .container2__title, .container
 }
 
 body {
-  min-width: 365px;
-  overflow-x: hidden;
+  min-width: 400px;
 }
 
 main, .page__container, main.page__container2 {
