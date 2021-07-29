@@ -1,8 +1,8 @@
 .container2{
     @extend .container;
     .container2__title{
-        font-size: 30px;
-        padding-right: 22rem;
+        font-size: 25px;
+        margin-left: 1rem;
     }
 }
 
@@ -10,6 +10,7 @@
     @extend %btn-secondary;
     background-color: lighten($color: $color-quatenary, $amount: 3%);
     padding-left: 1rem;
+    text-align: center;
     &:hover{
         cursor: pointer;
         background-color: lighten($color: $color-primary, $amount: 30%);
