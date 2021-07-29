@@ -462,7 +462,10 @@ footer .footer-page2 {
   }
 
   body.body-lanoteenchantee main.page__container2 {
-    height: 113rem;
+    height: 118rem;
+  }
+  body.body-lanoteenchantee main.page__container2 .page-card, body.body-lanoteenchantee main.page__container2 .page-card10, body.body-lanoteenchantee main.page__container2 .page-card9, body.body-lanoteenchantee main.page__container2 .page-card8, body.body-lanoteenchantee main.page__container2 .page-card7, body.body-lanoteenchantee main.page__container2 .page-card6, body.body-lanoteenchantee main.page__container2 .page-card5, body.body-lanoteenchantee main.page__container2 .page-card4, body.body-lanoteenchantee main.page__container2 .page-card3, body.body-lanoteenchantee main.page__container2 .page-card2, body.body-lanoteenchantee main.page__container2 .page-card1 {
+    margin-bottom: -3rem;
   }
 
   footer.footer-page, footer.footer-page2 {

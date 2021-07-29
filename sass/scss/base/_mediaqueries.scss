@@ -326,7 +326,10 @@
     }
     
     body.body-lanoteenchantee main.page__container2{
-        height: 113rem;
+        height: 118rem;
+        .page-card{
+            margin-bottom: -3rem;
+        }
     }
 
     footer.footer-page{
