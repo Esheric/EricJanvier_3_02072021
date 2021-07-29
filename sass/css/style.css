@@ -657,7 +657,8 @@ h1, h3, img, .oh, .my, .food, .container1__title, .container2__title, .container
 
 body {
   min-width: 375px;
-  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 main, .page__container, main.page__container2 {
@@ -1233,7 +1234,8 @@ article.page-card:hover mark.check-circle i, article.page-card1:hover mark.check
 
 body.body-lanoteenchantee, body.body-commun {
   min-width: 375px;
-  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
