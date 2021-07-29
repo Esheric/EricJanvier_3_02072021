@@ -1060,7 +1060,7 @@ main.page__container .page-card__title:after, main.page__container2 .page-card__
 }
 main.page__container .fa-stack, main.page__container2 .fa-stack {
   margin-top: -25px;
-  width: 0;
+  width: 30px;
 }
 main.page__container .page-carte__title, main.page__container2 .page-carte__title {
   font-size: 21px;
